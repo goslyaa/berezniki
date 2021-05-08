@@ -1,0 +1,14 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MAR = {
+				add_manpower = 24250
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2400
+				}
+				give_resource_rights = { receiver = KIR state = 398 }
+			}
+		}
+	}
+}

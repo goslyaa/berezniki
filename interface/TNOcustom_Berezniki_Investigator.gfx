@@ -1,0 +1,41 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_berezniki_gui_opener"
+		texturefile = "gfx/interface/berezniki_gui/MAR_Investigation_Opener.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Berezniki_GUI_IZVSHK"
+		texturefile = "gfx/interface/berezniki_gui/MAR_izhevsk_gui.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Berezniki_GUI_VYTRV"
+		texturefile = "gfx/interface/berezniki_gui/MAR_vyatirov_gui.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Berezniki_GUI_KDMKAR"
+		texturefile = "gfx/interface/berezniki_gui/MAR_kidimkar_gui.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Berezniki_GUI_BRZNKI"
+		texturefile = "gfx/interface/berezniki_gui/MAR_berezniki_gui.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Berezniki_GUI_YRLNSKY"
+		texturefile = "gfx/interface/berezniki_gui/MAR_yurlunsky_gui.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MAR_gui_button_des"
+		texturefile = "gfx/interface/berezniki_gui/MAR_gui_button_des.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_MAR_nigger_alarm_dossie_active"
+		texturefile = "gfx/interface/berezniki_gui/MAR_nigger_alarm_active.dds"
+	}
+}

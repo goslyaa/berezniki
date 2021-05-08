@@ -1,0 +1,51 @@
+scripted_gui = {	
+
+	TNO_SG_big_event_kosygin_reunification_custom = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_kosygin_reunification_custom_window"
+
+		visible = {
+			has_country_flag = big_event_custom_kosygin_reunification
+		}
+	}
+
+	TNO_SG_big_event_frame_kosygin_reunification_custom = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_frame_kosygin_reunification_custom"
+
+		visible = {
+			has_country_flag = big_event_custom_kosygin_reunification
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = big_event_custom_kosygin_reunification
+			}
+		}
+	}
+
+	TNO_SG_big_event_hey_sokoly_custom = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_hey_sokoly_custom_window"
+
+		visible = {
+			has_country_flag = big_event_custom_hey_sokoly
+		}
+	}
+
+	TNO_SG_big_event_frame_hey_sokoly_custom = { 
+		context_type = player_context
+		window_name = "TNO_SG_big_event_frame_hey_sokoly_custom"
+
+		visible = {
+			has_country_flag = big_event_custom_hey_sokoly
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = big_event_custom_hey_sokoly
+			}
+		}
+	}
+}
+#set_country_flag big_event_custom_hey_sokoly

@@ -1,0 +1,170 @@
+scripted_gui = {
+    TNO_Berezniki_Spy_Mehanic = {
+        context_type = player_context
+		window_name = "TNO_Berezniki_Spy_Mehanic"
+		visible = {
+			is_ai = no
+			tag = MAR
+			has_country_flag = MAR_mehanica_opener_activation
+			has_country_flag = Berezniki_globalis_open_door
+		}
+		
+		effects = {
+			MAR_Investigation_GUI_close_button_click = {
+				clr_country_flag = Berezniki_globalis_open_door
+			}
+			Berezniki_IZHVSK_gui_click = {
+				set_country_flag = MAR_vyatkaizhevsk_gui_window
+			}
+			Berezniki_VYTRV_gui_click = {
+				set_country_flag = MAR_vyatkakirov_gui_window
+			}
+			Berezniki_KDMKAR_gui_click = {
+				set_country_flag = MAR_vyatkakidimkar_gui_window
+			}
+			Berezniki_BRZNKI_gui_click = {
+				set_country_flag = MAR_berezbrzniki_gui_window
+			}
+			Berezniki_YRLNSKY_gui_click = {
+				set_country_flag = MAR_berezyrluynsky_gui_window
+			}
+			MAR_active_dossiers_button_click = {
+				set_country_flag = MAR_berez_dossiers_click
+			}
+		}
+        
+		triggers = {
+        }
+    }
+
+    TNO_Berezniki_Investigation_gui_evdi = {
+        context_type = player_context
+		window_name = "TNO_Berezniki_Investigation_gui_evdi"
+		visible = {
+			is_ai = no
+			tag = MAR
+			has_country_flag = MAR_mehanica_opener_activation
+			has_country_flag = Berezniki_globalis_open_door
+		}
+		
+		effects = {
+		}
+        
+		triggers = {
+        }
+    }
+
+    MAR_vyatirov_window_info = {
+        context_type = player_context
+		window_name = "MAR_vyatirov_window_info"
+		visible = {
+			is_ai = no
+			tag = MAR
+			has_country_flag = MAR_vyatkakirov_gui_window
+		}
+		
+		effects = {
+			MAR_vyatirov_PC_close_click = {
+				clr_country_flag = MAR_vyatkakirov_gui_window
+			}
+		}
+        
+		triggers = {
+        }
+    }
+
+    MAR_izhevsk_window_info = {
+        context_type = player_context
+		window_name = "MAR_izhevsk_window_info"
+		visible = {
+			is_ai = no
+			tag = MAR
+			has_country_flag = MAR_vyatkaizhevsk_gui_window
+		}
+		
+		effects = {
+			MAR_izhevsk_PC_close_click = {
+				clr_country_flag = MAR_vyatkaizhevsk_gui_window
+			}
+		}
+        
+		triggers = {
+        }
+    }
+
+    MAR_kidimkar_window_info = {
+        context_type = player_context
+		window_name = "MAR_kidimkar_window_info"
+		visible = {
+			is_ai = no
+			tag = MAR
+			has_country_flag = MAR_vyatkakidimkar_gui_window
+		}
+		
+		effects = {
+			MAR_kidimkar_PC_close_click = {
+				clr_country_flag = MAR_vyatkakidimkar_gui_window
+			}
+		}
+        
+		triggers = {
+        }
+    }
+
+    MAR_yurlinsky_window_info = {
+        context_type = player_context
+		window_name = "MAR_yurlinsky_window_info"
+		visible = {
+			is_ai = no
+			tag = MAR
+			has_country_flag = MAR_berezyrluynsky_gui_window
+		}
+		
+		effects = {
+			MAR_yurlinsky_PC_close_click = {
+				clr_country_flag = MAR_berezyrluynsky_gui_window
+			}
+		}
+        
+		triggers = {
+        }
+    }
+
+    MAR_berezniki_window_info = {
+        context_type = player_context
+		window_name = "MAR_berezniki_window_info"
+		visible = {
+			is_ai = no
+			tag = MAR
+			has_country_flag = MAR_berezbrzniki_gui_window
+		}
+		
+		effects = {
+			MAR_berezniki_PC_close_click = {
+				clr_country_flag = MAR_berezbrzniki_gui_window
+			}
+		}
+        
+		triggers = {
+        }
+    }
+	
+    MAR_dossers_window_gui = {
+        context_type = player_context
+		window_name = "MAR_dossers_window_gui"
+		visible = {
+			is_ai = no
+			tag = MAR
+			has_country_flag = MAR_berez_dossiers_click
+		}
+		
+		effects = {
+			MAR_berez_dossiers_close_click = {
+				clr_country_flag = MAR_berez_dossiers_click
+			}
+		}
+        
+		triggers = {
+        }
+    }
+}

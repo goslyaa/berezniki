@@ -1,0 +1,16 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TNO_Berezniki_GUI_Opener"
+		size = { width = 220 height = 128 }
+		position = { x = 0 y = 289 }
+		
+		buttonType = {
+			name = "MAR_gui_button_opener"
+			position = { x = 420 y = 7 }			
+			quadTextureSprite = "GFX_berezniki_gui_opener"
+			position = { x = 235 y = 34 }
+			pdx_tooltip = "berezniki_opener_pdxtt"
+			scale = 0.8
+		}
+    }
+}

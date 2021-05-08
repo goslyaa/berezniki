@@ -1,0 +1,30 @@
+scripted_gui = { 
+    TNO_Berezniki_GUI_Opener = {
+        context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_Berezniki_GUI_Opener"
+		
+		visible = {
+			tag = MAR
+		}
+		
+		effects = {
+			MAR_gui_button_opener_click = {
+				if = {
+					limit = { AND = { has_country_flag = MAR_mehanica_opener_activation } }
+					set_country_flag = Berezniki_globalis_open_door
+				}
+				else = {
+					limit = { has_country_flag = Berezniki_globalis_open_door }
+					clr_country_flag = Berezniki_globalis_open_door
+				}
+			}
+		}
+        
+		triggers = {
+			MAR_gui_button_opener_click_enabled = {
+				#OR = { has_country_flag = MAR_mehanica_opener_activation }
+			}
+		}
+    }
+}

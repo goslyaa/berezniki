@@ -1,0 +1,230 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TNO_Berezniki_Spy_Mehanic"
+		size = { width = 1200 height = 750 }
+		position = { x = 0 y = 0 }
+		moveable = yes
+		text = "Undefined"
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_for_gui_border9"
+		}
+
+		instantTextboxType = {
+			name = "MAR_KIR_spy_level_GUI_text"
+			position = { x = 950 y = 18 }
+			font = "aldrich_48_outline"
+			text = "[MAR_set_pizdec_level]"
+			format = center
+			maxWidth = 1150
+			maxHeight = 30
+		}
+
+		containerWindowType = {
+			name = "TNO_Berezniki_Investigation_gui_evdi"
+			size = { width = 1200 height = 750 }
+			position = { x = 0 y = 0 }
+			moveable = yes
+			horizontalScrollbar = "bottom_horizontal_slider_investigation"
+			verticalScrollbar = "right_vertical_slider_investigation"
+			margin = { left = 10 right = 10 top = 32 bottom = 30}
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+				alwaystransparent = yes
+			}
+		}
+
+		buttonType = {
+			name = "MAR_Investigation_GUI_close_button"
+			position = { x = -27 y = 3 }
+			quadTextureSprite = "GFX_closebutton_small"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		buttonType = {
+			name = "MAR_Investigation_GUI_close_button"
+			position = { x = -27 y = 3 }
+			quadTextureSprite = "GFX_closebutton_small"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+		}
+
+		buttonType = {
+			name = "Berezniki_IZHVSK_gui"
+			quadTextureSprite = "GFX_Berezniki_GUI_IZVSHK"
+			position = { x = 450 y = 540 }
+			centerposition = yes
+		}
+
+		buttonType = {
+			name = "Berezniki_VYTRV_gui"
+			quadTextureSprite = "GFX_Berezniki_GUI_VYTRV"
+			position = { x = 305 y = 368 }
+			centerposition = yes
+		}
+
+		buttonType = {
+			name = "Berezniki_KDMKAR_gui"
+			quadTextureSprite = "GFX_Berezniki_GUI_KDMKAR"
+			position = { x = 555 y = 314 }
+			centerposition = yes
+		}
+
+		buttonType = {
+			name = "Berezniki_BRZNKI_gui"
+			quadTextureSprite = "GFX_Berezniki_GUI_BRZNKI"
+			position = { x = 777 y = 258 }
+			centerposition = yes
+		}
+
+		buttonType = {
+			name = "Berezniki_YRLNSKY_gui"
+			quadTextureSprite = "GFX_Berezniki_GUI_YRLNSKY"
+			position = { x = 658 y = 221 }
+			centerposition = yes
+		}
+		
+		instantTextboxType = {
+			name = "MAR_KIR_spy_GUI_text"
+			position = { x = 20 y = 8 }
+			font = "aldrich_36_outline"
+			text = "[MAR_curent_level_of_vyatka_spy]"
+			maxWidth = 2000
+			maxHeight = 2000
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "MAR_nigga_alarm_active"
+			quadTextureSprite = "GFX_MAR_nigger_alarm_dossie_active"
+			position = { x = 965 y = 90 }
+		}
+
+		buttonType = {
+			name = "MAR_active_dossiers_button"
+			quadTextureSprite = "GFX_MAR_gui_button_des"
+			position = { x = 965 y = 90 }
+		}
+	}
+
+	containerWindowType = {
+		name = "MAR_vyatirov_window_info"
+		position = { x = 0 y = 0 }
+		moveable = yes
+		size = { width = 320 height = 295 }
+		margin = { top = 14 bottom = 14 }
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		buttonType = {
+			name = "MAR_vyatirov_PC_close"
+			quadTextureSprite = "GFX_crt_closebutton"
+			position = { x = -33 y = 0 }
+			orientation = upper_right
+		}
+	}
+
+	containerWindowType = {
+		name = "MAR_izhevsk_window_info"
+		position = { x = 0 y = 0 }
+		moveable = yes
+		size = { width = 320 height = 295 }
+		margin = { top = 14 bottom = 14 }
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		buttonType = {
+			name = "MAR_izhevsk_PC_close"
+			quadTextureSprite = "GFX_crt_closebutton"
+			position = { x = -33 y = 0 }
+			orientation = upper_right
+		}
+	}
+
+	containerWindowType = {
+		name = "MAR_kidimkar_window_info"
+		position = { x = 0 y = 0 }
+		moveable = yes
+		size = { width = 320 height = 295 }
+		margin = { top = 14 bottom = 14 }
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		buttonType = {
+			name = "MAR_kidimkar_PC_close"
+			quadTextureSprite = "GFX_crt_closebutton"
+			position = { x = -33 y = 0 }
+			orientation = upper_right
+		}
+	}
+
+	containerWindowType = {
+		name = "MAR_yurlinsky_window_info"
+		position = { x = 0 y = 0 }
+		moveable = yes
+		size = { width = 320 height = 295 }
+		margin = { top = 14 bottom = 14 }
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		buttonType = {
+			name = "MAR_yurlinsky_PC_close"
+			quadTextureSprite = "GFX_crt_closebutton"
+			position = { x = -33 y = 0 }
+			orientation = upper_right
+		}
+	}
+
+	containerWindowType = {
+		name = "MAR_berezniki_window_info"
+		position = { x = 0 y = 0 }
+		moveable = yes
+		size = { width = 320 height = 295 }
+		margin = { top = 14 bottom = 14 }
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		buttonType = {
+			name = "MAR_berezniki_PC_close"
+			quadTextureSprite = "GFX_crt_closebutton"
+			position = { x = -33 y = 0 }
+			orientation = upper_right
+		}
+	}
+	
+	containerWindowType = {
+		name = "MAR_dossers_window_gui"
+		position = { x = 0 y = 0 }
+		moveable = yes
+		size = { width = 420 height = 395 }
+		margin = { top = 14 bottom = 14 }
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+	
+		buttonType = {
+			name = "MAR_berez_dossiers_close"
+			quadTextureSprite = "GFX_crt_closebutton"
+			position = { x = -33 y = 0 }
+			orientation = upper_right
+		}
+	}
+}

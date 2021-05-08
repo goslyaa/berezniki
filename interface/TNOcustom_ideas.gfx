@@ -1,0 +1,17 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_MAR_regent_ne_car"
+		texturefile = "gfx/interface/ideas/MAR/idea_MAR_regent_ne_car.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MAR_dohlaya_armia"
+		texturefile = "gfx/interface/ideas/MAR/idea_MAR_dohlaya_armia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MAR_carskye_politruki"
+		texturefile = "gfx/interface/ideas/MAR/idea_MAR_carskye_politruki.dds"
+	}
+}

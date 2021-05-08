@@ -1,0 +1,11 @@
+sound = {
+	name = "da_zdravstvuet_bigevent"
+	file = "menu/tno_se_custom_da_zdravstvuet.wav"
+	always_load = no
+}
+
+sound = {
+	name = "tno_hey_sokoly_bigevent"
+	file = "menu/tno_se_custom_hey_sokoly.wav"
+	always_load = no
+}
