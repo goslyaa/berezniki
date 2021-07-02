@@ -1,0 +1,15 @@
+is_russian_nation = {
+	OR = {
+		original_tag = MAR
+	}
+}
+is_russian_unifier = {
+	OR = {
+		original_tag = MAR
+	}
+}
+#is_central_russian_nation = {
+#	OR = {
+#		original_tag = MAR
+#	}
+#}	

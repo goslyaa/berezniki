@@ -1,0 +1,29 @@
+MAR_debug_category = {
+	icon = GFX_decision_category_generic_political_actions
+	picture = GFX_RUS_placeholder
+
+	allowed = {
+		tag = MAR
+	}
+	visible = {
+		is_debug = yes
+		is_ai = no
+	}
+
+	visible_when_empty = yes
+	priority = {
+		base = 15
+	}
+}
+
+MAR_berezniki_unite_russian = {
+	icon = GFX_decision_category_generic_political_actions
+
+	allowed = {
+		tag = MAR
+	}
+	visible_when_empty = no
+	priority = {
+		base = 30
+	}	
+}	

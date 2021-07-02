@@ -1,0 +1,1719 @@
+########################################################
+###██████████████████████████████████████████████████###
+###█░░░░░░░░░░░░░░█░░░░░░░░██░░░░░░░░█░░░░░░░░░░░░░░█###
+###█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀░░██░░▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█###
+###█░░▄▀░░░░░░▄▀░░█░░░░▄▀░░██░░▄▀░░░░█░░▄▀░░░░░░░░░░█###
+###█░░▄▀░░██░░▄▀░░███░░▄▀▄▀░░▄▀▄▀░░███░░▄▀░░█████████###
+###█░░▄▀░░░░░░▄▀░░███░░░░▄▀▄▀▄▀░░░░███░░▄▀░░░░░░░░░░█###
+###█░░▄▀▄▀▄▀▄▀▄▀░░█████░░░░▄▀░░░░█████░░▄▀▄▀▄▀▄▀▄▀░░█###
+###█░░▄▀░░░░░░▄▀░░███████░░▄▀░░███████░░▄▀░░░░░░░░░░█###
+###█░░▄▀░░██░░▄▀░░███████░░▄▀░░███████░░▄▀░░█████████###
+###█░░▄▀░░██░░▄▀░░███████░░▄▀░░███████░░▄▀░░░░░░░░░░█###
+###█░░▄▀░░██░░▄▀░░███████░░▄▀░░███████░░▄▀▄▀▄▀▄▀▄▀░░█###
+###█░░░░░░██░░░░░░███████░░░░░░███████░░░░░░░░░░░░░░█###
+###██████████████████████████████████████████████████###############################################################################
+###РУС: Мы никак не поддерживаем АУЕ и не солидарны с ним, это экстремистская организация прежде всего                           ###
+###ENG: We do not support the AUE in any way and do not stand in solidarity with it, it is an extremist organization first of all###
+####################################################################################################################################
+#1)Starting Tree
+#2)Expansion Tree
+#3)Regional Political Branch
+#4)Regional Economy Branch
+#5)Regional Army Branch
+#6)Regional Foreign Policy Branch
+#7)Superregional Jaba Tree
+#8)Superregional Bratki Plot Tree
+#9)Superregional Pseudodemocratic Tree
+
+###Starting Tree###
+shared_focus = {
+	id = KOM_Land_of_Bratki
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 4
+	y = 0
+
+}
+shared_focus = {
+	id = KOM_Grand_skhodka
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Land_of_Bratki
+	}
+	x = 4
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_Economy_graveyard
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Grand_skhodka
+	}
+	x = 3
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_Restore_production
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Economy_graveyard
+	}
+	x = 2
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_Punishmet_for_baklans
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Restore_production
+	}
+	x = 0
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_Legacy_of_North
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Grand_skhodka
+	}
+	x = 5
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_Clan_for_clans
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Legacy_of_North
+		focus = KOM_Economy_graveyard
+	}
+	x = 4
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_Brother_for_brother
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Legacy_of_North
+	}
+	x = 4
+	y = 5
+
+}
+shared_focus = {
+	id = KOM_warfare_bands
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Legacy_of_North
+	}
+	x = 6
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_fight_kryshevanie
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_warfare_bands
+	}
+	x = 8
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_Opushentsi_into_squads
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_warfare_bands
+	}
+	prerequisite = {
+		focus = KOM_fight_kryshevanie
+	}
+	x = 6
+	y = 5
+
+}
+shared_focus = {
+	id = KOM_Under_watch_of_elders
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Restore_production
+	}
+	prerequisite = {
+		focus = KOM_Punishmet_for_baklans
+	}
+	x = 2
+	y = 5
+
+}
+shared_focus = {
+	id = KOM_budget_for_future
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Under_watch_of_elders
+		focus = KOM_Brother_for_brother
+		focus = KOM_Opushentsi_into_squads
+	}
+	x = 4
+	y = 6
+
+}
+
+###Expansion Tree###
+shared_focus = {
+	id = KOM_Suchiy_march
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 4
+	y = 0
+
+}
+shared_focus = {
+	id = KOM_our_business
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Suchiy_march
+	}
+	x = 4
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_sbrod_mobilisation
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_our_business
+	}
+	x = 3
+	y = 2
+
+}
+focus = {
+	id = KOM_for_reward
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_sbrod_mobilisation
+	}
+	x = 1
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_for_nazhiva
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_sbrod_mobilisation
+	}
+	x = 3
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_merhant_fanaticism
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_for_nazhiva
+	}
+	prerequisite = {
+		focus = KOM_for_reward
+	}
+	x = 3
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_resourse_takeon
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_our_business
+	}
+	x = 5
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_podmazat_ones
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_resourse_takeon
+	}
+	x = 5
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_vstavit_other
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_resourse_takeon
+	}
+	x = 7
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_similar_motives
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_podmazat_ones
+	}
+	prerequisite = {
+		focus = KOM_vstavit_other
+	}
+	x = 5
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_Vorkuta_march
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_similar_motives
+	}
+	prerequisite = {
+		focus = KOM_merhant_fanaticism
+	}
+	x = 4
+	y = 5
+
+}
+shared_focus = {
+	id = KOM_Their_destiny_is
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Vorkuta_march
+	}
+	x = 4
+	y = 6
+
+}
+shared_focus = {
+	id = KOM_death
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Their_destiny_is
+	}
+	mutually_exclusive = {
+		focus = KOM_pardon
+		focus = KOM_redemtion
+	}
+	x = 6
+	y = 7
+
+}
+shared_focus = {
+	id = KOM_pardon
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Their_destiny_is
+	}
+	mutually_exclusive = {
+		focus = KOM_redemtion
+		focus = KOM_death
+	}
+	x = 2
+	y = 7
+
+}
+shared_focus = {
+	id = KOM_redemtion
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Their_destiny_is
+	}
+	mutually_exclusive = {
+		focus = KOM_pardon
+		focus = KOM_death
+	}
+	x = 4
+	y = 7
+
+}
+shared_focus = {
+	id = KOM_Vorkutan_pakhanate
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_pardon
+		focus = KOM_redemtion
+		focus = KOM_death
+	}
+	x = 5
+	y = 8
+
+}
+shared_focus = {
+	id = KOM_echoes_of_zastenki
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_pardon
+		focus = KOM_redemtion
+		focus = KOM_death
+	}
+	x = 3
+	y = 8
+
+}
+shared_focus = {
+	id = KOM_look_east
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_echoes_of_zastenki
+	}
+	prerequisite = {
+		focus = KOM_Vorkutan_pakhanate
+	}
+	x = 4
+	y = 9
+
+}
+shared_focus = {
+	id = KOM_Berhanskaya_gift
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_look_east
+	}
+	x = 4
+	y = 10
+
+}
+shared_focus = {
+	id = KOM_take_with_bruteforce
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Berhanskaya_gift
+	}
+	mutually_exclusive = {
+		focus = KOM_Surgut_negotiation
+	}
+	x = 3
+	y = 11
+
+}
+shared_focus = {
+	id = KOM_Surgut_negotiation
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Berhanskaya_gift
+	}
+	mutually_exclusive = {
+		focus = KOM_take_with_bruteforce
+	}
+	x = 5
+	y = 11
+
+}
+shared_focus = {
+	id = KOM_packets_of_Zlatoust
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Surgut_negotiation
+		focus = KOM_take_with_bruteforce
+	}
+	x = 4
+	y = 12
+
+}
+shared_focus = {
+	id = KOM_wifes_for_thiefs
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_take_with_bruteforce
+		focus = KOM_Surgut_negotiation
+	}
+	x = 2
+	y = 12
+
+}
+shared_focus = {
+	id = KOM_flying_zeks
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_take_with_bruteforce
+		focus = KOM_Surgut_negotiation
+	}
+	x = 6
+	y = 12
+
+}
+shared_focus = {
+	id = KOM_knife_in_back
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_wifes_for_thiefs
+	}
+	prerequisite = {
+		focus = KOM_packets_of_Zlatoust
+	}
+	prerequisite = {
+		focus = KOM_flying_zeks
+	}
+	mutually_exclusive = {
+		focus = KOM_business_trade
+	}
+	x = 3
+	y = 13
+
+}
+shared_focus = {
+	id = KOM_business_trade
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_wifes_for_thiefs
+	}
+	prerequisite = {
+		focus = KOM_packets_of_Zlatoust
+	}
+	prerequisite = {
+		focus = KOM_flying_zeks
+	}
+	mutually_exclusive = {
+		focus = KOM_knife_in_back
+	}
+	x = 5
+	y = 13
+
+}
+shared_focus = {
+	id = KOM_behind_their_back
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_knife_in_back
+		focus = KOM_business_trade
+	}
+	x = 2
+	y = 14
+
+}
+shared_focus = {
+	id = KOM_the_great_sbor
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_knife_in_back
+		focus = KOM_business_trade
+	}
+	x = 4
+	y = 14
+
+}
+shared_focus = {
+	id = KOM_Batovs_back
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_knife_in_back
+		focus = KOM_business_trade
+	}
+	x = 6
+	y = 14
+
+}
+shared_focus = {
+	id = KOM_Omsk_run
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Batovs_back
+	}
+	prerequisite = {
+		focus = KOM_the_great_sbor
+	}
+	prerequisite = {
+		focus = KOM_behind_their_back
+	}
+	x = 4
+	y = 15
+
+}
+shared_focus = {
+	id = KOM_Western_Siberia_Kleptocrates
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Omsk_run
+	}
+	x = 4
+	y = 16
+
+}
+
+###Regional Political Branch###
+shared_focus = {
+	id = KOM_State_council
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 4
+	y = 0
+
+}
+shared_focus = {
+	id = KOM_Jaba_Ambitions
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_State_council
+	}
+	x = 3
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_Sverdlovsk_teatime
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Jaba_Ambitions
+	}
+	x = 1
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_echoes_of_briliants
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Sverdlovsk_teatime
+	}
+	x = 0
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_Traitors_behind_my_back
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Jaba_Ambitions
+	}
+	x = 3
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_Vorkutan_meeting
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Traitors_behind_my_back
+	}
+	x = 3
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_ratruns
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_State_council
+	}
+	x = 5
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_Yugorsk
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_ratruns
+	}
+	x = 5
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_is_ready_to_war
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Yugorsk
+	}
+	x = 5
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_opetusharit_him
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_ratruns
+	}
+	x = 7
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_end_of_the_deeds
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_opetusharit_him
+	}
+	x = 8
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_take_them_on_meeting
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_end_of_the_deeds
+	}
+	prerequisite = {
+		focus = KOM_is_ready_to_war
+	}
+	prerequisite = {
+		focus = KOM_echoes_of_briliants
+	}
+	prerequisite = {
+		focus = KOM_Vorkutan_meeting
+	}
+	x = 4
+	y = 4
+
+}
+###Regional Economy Branch###
+shared_focus = {
+	id = KOM_Great_perelom
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 15
+	y = 0
+
+}
+shared_focus = {
+	id = KOM_Skhodnyak_of_big_buisiness
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Great_perelom
+	}
+	x = 15
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_great_building
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Skhodnyak_of_big_buisiness
+	}
+	x = 13
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_proginaysya_i_podchinyaysya
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_great_building
+	}
+	x = 12
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_production_normy
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_proginaysya_i_podchinyaysya
+	}
+	x = 11
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_rebuild_Zlatoust
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_proginaysya_i_podchinyaysya
+	}
+	x = 13
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_Huge_votchina
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_rebuild_Zlatoust
+	}
+	x = 13
+	y = 5
+
+}
+shared_focus = {
+	id = KOM_many_promzonas
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Huge_votchina
+	}
+	x = 13
+	y = 6
+
+}
+shared_focus = {
+	id = KOM_economy_sdvig
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Skhodnyak_of_big_buisiness
+	}
+	x = 17
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_transural_barschina
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_economy_sdvig
+		focus = KOM_great_building
+	}
+	x = 15
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_languague_instutionalisation
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_transural_barschina
+	}
+	x = 15
+	y = 6
+
+}
+shared_focus = {
+	id = KOM_right_seria
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_economy_sdvig
+	}
+	x = 18
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_Pakhanate_finansing
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_right_seria
+	}
+	x = 17
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_new_elite
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Pakhanate_finansing
+	}
+	x = 17
+	y = 5
+
+}
+shared_focus = {
+	id = KOM_take_everything_and_move_outward
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_new_elite
+	}
+	x = 17
+	y = 6
+
+}
+shared_focus = {
+	id = KOM_ogranichenie_seria
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_right_seria
+	}
+	x = 19
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_law_seria
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_ogranichenie_seria
+	}
+	x = 19
+	y = 5
+
+}
+shared_focus = {
+	id = KOM_ponyatia_constitution
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_law_seria
+	}
+	x = 19
+	y = 6
+
+}
+shared_focus = {
+	id = KOM_factory_in_every_town
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_production_normy
+	}
+	x = 11
+	y = 5
+
+}
+shared_focus = {
+	id = KOM_new_Uralmash
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_factory_in_every_town
+	}
+	x = 11
+	y = 6
+
+}
+shared_focus = {
+	id = KOM_tankograd_project
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_new_Uralmash
+	}
+	x = 11
+	y = 7
+
+}
+shared_focus = {
+	id = KOM_sudy_pri_vorah
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_ponyatia_constitution
+	}
+	x = 19
+	y = 7
+
+}
+shared_focus = {
+	id = KOM_thief_capitalism
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_new_Uralmash
+	}
+	prerequisite = {
+		focus = KOM_many_promzonas
+	}
+	prerequisite = {
+		focus = KOM_languague_instutionalisation
+	}
+	prerequisite = {
+		focus = KOM_take_everything_and_move_outward
+	}
+	prerequisite = {
+		focus = KOM_ponyatia_constitution
+	}
+	x = 15
+	y = 7
+
+}
+
+###Regional Army Branch###
+shared_focus = {
+	id = KOM_army_commisariate
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 25
+	y = 0
+
+}
+shared_focus = {
+	id = KOM_payment_work
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_army_commisariate
+	}
+	x = 24
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_world_reinforcements
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_payment_work
+	}
+	x = 22
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_yesterday_merchants_soldiers_today
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_payment_work
+	}
+	x = 24
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_personal_army_for_every_bratok
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_world_reinforcements
+	}
+	prerequisite = {
+		focus = KOM_yesterday_merchants_soldiers_today
+	}
+	x = 22
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_future_of_warfare
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_yesterday_merchants_soldiers_today
+	}
+	prerequisite = {
+		focus = KOM_personal_army_for_every_bratok
+	}
+	x = 24
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_reopen_factories
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_army_commisariate
+	}
+	x = 26
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_buy_resorces_and_weapons
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_reopen_factories
+	}
+	x = 26
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_external_specialists
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_reopen_factories
+	}
+	x = 28
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_invite_investors
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_buy_resorces_and_weapons
+	}
+	prerequisite = {
+		focus = KOM_external_specialists
+	}
+	x = 28
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_restore_production
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_buy_resorces_and_weapons
+	}
+	prerequisite = {
+		focus = KOM_invite_investors
+	}
+	x = 26
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_unregular_regular_army
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_future_of_warfare
+	}
+	prerequisite = {
+		focus = KOM_restore_production
+	}
+	x = 25
+	y = 5
+
+}
+
+###Regional Foreign Policy Branch###
+shared_focus = {
+	id = KOM_external_pravilovo
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 35
+	y = 0
+
+}
+
+
+shared_focus = {
+	id = KOM_Germany_kolebania
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_external_pravilovo
+	}
+	x = 31
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_world_market_speculations
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_external_pravilovo
+	}
+	x = 33
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_with_everyone_against_everyone
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_world_market_speculations
+	}
+	prerequisite = {
+		focus = KOM_Germany_kolebania
+	}
+	x = 32
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_asia_interests
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_external_pravilovo
+	}
+	x = 35
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_afghani_mission
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_asia_interests
+	}
+	x = 35
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_control_narcotraffic
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_afghani_mission
+	}
+	x = 35
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_destroy_their_economy
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_external_pravilovo
+	}
+	x = 37
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_temporary_koresh
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_external_pravilovo
+	}
+	x = 39
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_predlozhenie_ot_kotorogo_nelzya_otkazatsya
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_destroy_their_economy
+	}
+	prerequisite = {
+		focus = KOM_temporary_koresh
+	}
+	x = 38
+	y = 2
+
+}
+
+###Superregional Jaba Tree###
+shared_focus = {
+	id = KOM_Georgian_triumph
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 4
+	y = 0
+
+}
+shared_focus = {
+	id = KOM_ponyatia_and_laws
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Georgian_triumph
+	}
+	x = 2
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_change_everyone
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_ponyatia_and_laws
+	}
+	x = 1
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_cultural_fraers
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_change_everyone
+	}
+	x = 2
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_mast_isnt_matter
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_cultural_fraers
+	}
+	x = 1
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_Hyperindustrialisation
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Georgian_triumph
+	}
+	x = 4
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_prigrozite_im
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Hyperindustrialisation
+	}
+	x = 3
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_not_give_them_a_choice
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Hyperindustrialisation
+	}
+	x = 5
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_Gigajabovki
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_prigrozite_im
+	}
+	prerequisite = {
+		focus = KOM_not_give_them_a_choice
+	}
+	x = 4
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_samosbor
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Gigajabovki
+	}
+	x = 4
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_the_new_37
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Georgian_triumph
+	}
+	x = 6
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_no_more_clans
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_the_new_37
+	}
+	x = 7
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_liquidation_of_cherty
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_no_more_clans
+	}
+	x = 6
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_thind_most
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_liquidation_of_cherty
+	}
+	x = 7
+	y = 4
+
+}
+shared_focus = {
+	id = KOM_Russia_without_bespredel
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_mast_isnt_matter
+	}
+	prerequisite = {
+		focus = KOM_samosbor
+	}
+	prerequisite = {
+		focus = KOM_thind_most
+	}
+	x = 4
+	y = 5
+
+}
+
+###Superregional Bratki Plot Tree###
+shared_focus = {
+	id = KOM_Bratki_plot
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 4
+	y = 0
+
+}
+shared_focus = {
+	id = KOM_clan_for_everyone
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Bratki_plot
+	}
+	x = 1
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_kazhdomu_po_sposobnostyam
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Bratki_plot
+	}
+	x = 3
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_udel_Russia
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_kazhdomu_po_sposobnostyam
+	}
+	prerequisite = {
+		focus = KOM_clan_for_everyone
+	}
+	x = 2
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_blatnye_and_kozly
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_udel_Russia
+	}
+	x = 1
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_new_Chairman
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Bratki_plot
+	}
+	x = 5
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_take_lands_of_Jaba
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_kazhdomu_po_sposobnostyam
+	}
+	prerequisite = {
+		focus = KOM_new_Chairman
+	}
+	x = 4
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_bye_system
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_take_lands_of_Jaba
+	}
+	prerequisite = {
+		focus = KOM_udel_Russia
+	}
+	x = 3
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_money_in_shodnyak
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Bratki_plot
+	}
+	x = 7
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_never_again
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_new_Chairman
+	}
+	prerequisite = {
+		focus = KOM_money_in_shodnyak
+	}
+	x = 6
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_torpedas_against_brothesrs
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_take_lands_of_Jaba
+	}
+	prerequisite = {
+		focus = KOM_never_again
+	}
+	x = 5
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_eternal_razborki
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_never_again
+	}
+	x = 7
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_Battle_Royale
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_eternal_razborki
+	}
+	prerequisite = {
+		focus = KOM_torpedas_against_brothesrs
+	}
+	prerequisite = {
+		focus = KOM_bye_system
+	}
+	prerequisite = {
+		focus = KOM_blatnye_and_kozly
+	}
+	x = 4
+	y = 4
+
+}
+
+###Superregional Pseudodemocratic Tree###
+shared_focus = {
+	id = KOM_cultural_vory
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 5
+	y = 0
+
+}
+shared_focus = {
+	id = KOM_world_priznanie
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_cultural_vory
+	}
+	x = 1
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_Zona_democracy
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_cultural_vory
+	}
+	x = 3
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_OFN_uchenia
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_Zona_democracy
+	}
+	prerequisite = {
+		focus = KOM_world_priznanie
+	}
+	x = 3
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_thief_democrature
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_cultural_vory
+	}
+	x = 5
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_false_freedom
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_thief_democrature
+	}
+	x = 5
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_our_big_friends
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_cultural_vory
+	}
+	x = 7
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_syreivoy_pridatok
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_cultural_vory
+	}
+	x = 9
+	y = 1
+
+}
+shared_focus = {
+	id = KOM_economy_of_offshore
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_our_big_friends
+	}
+	prerequisite = {
+		focus = KOM_syreivoy_pridatok
+	}
+	x = 7
+	y = 2
+
+}
+shared_focus = {
+	id = KOM_something_more_than_business
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_false_freedom
+	}
+	prerequisite = {
+		focus = KOM_OFN_uchenia
+	}
+	prerequisite = {
+		focus = KOM_economy_of_offshore
+	}
+	x = 5
+	y = 3
+
+}
+shared_focus = {
+	id = KOM_not_today_not_tomarrow
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = KOM_something_more_than_business
+	}
+	x = 5
+	y = 4
+
+}

@@ -1,0 +1,3450 @@
+#######################################################################
+##██████╗░███████╗██████╗░███████╗███████╗    ███╗░░██╗██╗██╗░░██╗██╗##
+##██╔══██╗██╔════╝██╔══██╗██╔════╝╚════██║    ████╗░██║██║██║░██╔╝██║##
+##██████╦╝█████╗░░██████╔╝█████╗░░░░███╔═╝    ██╔██╗██║██║█████═╝░██║##
+##██╔══██╗██╔══╝░░██╔══██╗██╔══╝░░██╔══╝░░    ██║╚████║██║██╔═██╗░██║##
+##██████╦╝███████╗██║░░██║███████╗███████╗    ██║░╚███║██║██║░╚██╗██║##
+##╚═════╝░╚══════╝╚═╝░░╚═╝╚══════╝╚══════╝    ╚═╝░░╚══╝╚═╝╚═╝░░╚═╝╚═╝#
+##╚═════╝░╚══════╝╚═╝░░╚═╝╚══════╝╚══════╝    ╚═╝░░╚══╝╚═╝╚═╝░░╚═╝╚═╝##
+#######################################################################
+
+add_namespace = berez_mehanica
+add_namespace = berez_eco
+add_namespace = berez_bomb
+add_namespace = berez_voina
+add_namespace = berez_news
+add_namespace = berez_zemsob
+add_namespace = KIR # shpion
+add_namespace = berez_belozerski
+add_namespace = berez_kazembek
+
+add_namespace = berez_world_news
+
+country_event = { #StranaStart
+	id = berez_eco.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.1"}
+	title = berez_eco.1.t
+	desc = berez_eco.1.d
+	picture = GFX_report_event_NashiNachinania
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.1.a
+		ai_chance = { factor = 1 }
+		add_political_power = 50	
+	}
+}
+
+country_event = { #Posilka
+	id = berez_eco.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.2"}
+	title = berez_eco.2.t
+	desc = berez_eco.2.d
+	picture = GFX_report_event_SpasiboVyat
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = berez_eco.2.a
+		ai_chance = { factor = 1 }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+		}
+		add_equipment_to_stockpile = { 
+			type = support_equipment 
+			amount = 300
+		}
+	}
+}
+
+country_event = { #Future
+	id = berez_eco.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.3"}
+	title = berez_eco.3.t
+	desc = berez_eco.3.d
+	picture = GFX_report_event_PervoyeFutureFocus
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.3.a
+		ai_chance = { factor = 1 }		
+	}
+}
+
+country_event = { #Prozvetanie
+	id = berez_eco.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.4"}
+	title = berez_eco.4.t
+	desc = berez_eco.4.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = berez_eco.4.a
+		ai_chance = { factor = 1 }	
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			category = industry
+		}
+	}
+}
+
+country_event = { #Krov
+	id = berez_eco.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.5"}
+	title = berez_eco.5.t
+	desc = berez_eco.5.d
+	picture = GFX_report_event_DlyaKroviEvent
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.5.a
+		ai_chance = { factor = 1 }	
+		hidden_effect = {
+			tno_max_workhours_worsen = yes
+		}
+	}
+}
+
+country_event = {#TroetochiePotom
+	id = berez_eco.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.6"}
+	title = berez_eco.6.t
+	desc = berez_eco.6.d
+	picture = GFX_report_event_DlyaPotaEvent
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.6.a
+		ai_chance = { factor = 1 }	
+		hidden_effect = {
+			TNO_improve_agriculture_high = yes
+		}
+	}
+}
+
+country_event = {#NikakihKoncesiEpta
+	id = berez_eco.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.7"}
+	title = berez_eco.7.t
+	desc = berez_eco.7.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.7.a
+		ai_chance = { factor = 1 }	
+	    KIR = { 
+   		   	country_event = {
+   		   	   	id = berez_eco.8
+   		   	    hours = 168
+   		    }
+   		}
+	}
+}
+
+country_event = {#BlyatVyatkaObosralas
+	id = berez_eco.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.8"}
+	title = berez_eco.8.t
+	desc = berez_eco.8.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+        name = berez_eco.8.a
+        ai_chance = { factor = 1 }
+        add_opinion_modifier = {
+            target = MAR
+            modifier = MAR_resource_withdraw
+        }
+        remove_resource_rights = 398
+    }
+}
+
+country_event = {#NarodnyaLubov
+	id = berez_eco.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.9"}
+	title = berez_eco.9.t
+	desc = berez_eco.9.d
+	picture = GFX_report_event_PomogaemNePomogaemim
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.9.a
+		ai_chance = { factor = 1 }	
+		add_political_power = 35
+		TNO_improve_poverty_low = yes
+		add_timed_idea = {
+			idea = MAR_helping_people
+			days = 100
+		}
+	}
+}
+
+country_event = {#FuturePravo
+	id = berez_eco.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.10"}
+	title = berez_eco.10.t
+	desc = berez_eco.10.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.10.a
+		ai_chance = { factor = 1 }	
+		tno_education_improve = yes
+	}
+}
+
+country_event = {#VodnomRyaduSMuzhkami
+	id = berez_eco.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.11"}
+	title = berez_eco.11.t
+	desc = berez_eco.11.d
+	picture = GFX_report_event_ArowWithMan
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.11.a
+		ai_chance = { factor = 1 }	
+		hidden_effect = {
+			tno_gender_rights_improve = yes
+			tno_women_improve = yes
+		}
+	}
+}
+
+country_event = {#PostEffectumOtPotium
+	id = berez_eco.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.12"}
+	title = berez_eco.12.t
+	desc = berez_eco.12.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.12.a
+		ai_chance = { factor = 1 }	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {#KroviumPostEffectum
+	id = berez_eco.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.13"}
+	title = berez_eco.13.t
+	desc = berez_eco.13.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.13.a
+		ai_chance = { factor = 1 }	
+		398 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = berez_eco.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.14"}
+	title = berez_eco.14.t
+	desc = berez_eco.14.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.14.a
+		ai_chance = { factor = 1 }	
+		add_stability = 0.07
+		TNO_improve_poverty_low = yes
+	}
+}
+
+country_event = {
+	id = berez_eco.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.15"}
+	title = berez_eco.15.t
+	desc = berez_eco.15.d
+	picture = GFX_report_event_SlavaUralTantkam
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.15.a
+		ai_chance = { factor = 1 }	
+		TNO_improve_industrial_equipment_med = yes
+		TNO_improve_industrial_expertise_low = yes
+	}
+}
+
+country_event = {
+	id = berez_eco.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.16"}
+	title = berez_eco.16.t
+	desc = berez_eco.16.d
+	picture = GFX_report_event_RabFacrottii
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.16.a
+		ai_chance = { factor = 1 }	
+		TNO_improve_academic_base_med = yes
+		TNO_improve_research_facilities_low = yes
+	}
+}
+
+country_event = {#NachaloPolitVetki 
+	id = berez_eco.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.17"}
+	title = berez_eco.17.t
+	desc = berez_eco.17.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.17.a
+		ai_chance = { factor = 1 }	
+	}
+}
+
+country_event = {#BelOzero 
+	id = berez_eco.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.18"}
+	title = berez_eco.18.t
+	desc = berez_eco.18.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.18.a
+		ai_chance = { factor = 1 }	
+	}
+}
+
+country_event = {#MariaUBeloozera
+	id = berez_eco.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.19"}
+	title = berez_eco.19.t
+	desc = berez_eco.19.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.19.a
+		ai_chance = { factor = 1 }	
+	}
+}
+
+country_event = {#WeirdoNovost
+	id = berez_eco.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.20"}
+	title = berez_eco.20.t
+	desc = berez_eco.20.d
+	picture = GFX_report_event_KosyginTiKtoNahui
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.20.a
+		ai_chance = { factor = 1 }	
+		add_political_power = -20
+		add_ideas = {
+			MAR_regent_without_tsar_2
+		}
+		remove_ideas = {
+			MAR_regent_without_tsar_1
+		}
+	}
+}
+
+country_event = {#NaseleniePodSlezhkoi
+	id = berez_eco.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.21"}
+	title = berez_eco.21.t
+	desc = berez_eco.21.d
+	picture = GFX_report_event_ZleshkaZaVyat
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.21.a
+		ai_chance = { factor = 1 }	
+		add_tech_bonus = {
+		bonus = 0.5
+		uses = 2
+		category = decryption_tech
+		}
+	}
+}
+
+country_event = {#BozheSpasiISohrani
+	id = berez_eco.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.22"}
+	title = berez_eco.22.t
+	desc = berez_eco.22.d
+	picture = GFX_report_event_GlazaNaUg
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.22.a
+		ai_chance = { factor = 1 }	
+		add_manpower = -113
+	}
+}
+
+country_event = {#WeirdoRazgovor
+	id = berez_eco.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.23"}
+	title = berez_eco.23.t
+	desc = berez_eco.23.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.23.a
+		ai_chance = { factor = 1 }
+		add_ideas = {
+			MAR_regent_without_tsar_3
+		}
+		remove_ideas = {
+			MAR_regent_without_tsar_2
+		}		
+        hidden_effect = {
+			add_political_power = -24
+		}
+	}
+}
+
+country_event = {#NachaloVoenki
+	id = berez_eco.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.24"}
+	title = berez_eco.24.t
+	desc = berez_eco.24.d
+	picture = GFX_report_event_DlyaPervoyVoenki
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.24.a
+		ai_chance = { factor = 1 }	
+	}
+}
+
+country_event = {#NachetBarbarossiEpta
+	id = berez_eco.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.25"}
+	title = berez_eco.25.t
+	desc = berez_eco.25.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.25.a
+		ai_chance = { factor = 1 }	
+	}
+}
+
+country_event = {#CockZaki
+	id = berez_eco.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.26"}
+	title = berez_eco.26.t
+	desc = berez_eco.26.d
+	picture = GFX_report_event_DaEtoZhePepelyaev
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.26.a
+		ai_chance = { factor = 1 }	
+		398 = {
+			create_unit = {
+				division = "division_template = \"Kazachya Brigada\" start_experience_factor = 0.9 start_equipment_factor = 0.75"
+				owner = MAR
+			}
+			create_unit = {
+				division = "division_template = \"Kazachya Brigada\" start_experience_factor = 0.9 start_equipment_factor = 0.75"
+				owner = MAR
+			}
+		}
+	}
+}
+
+country_event = {#WhatAbouNibbaTsarist
+	id = berez_eco.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.27"}
+	title = berez_eco.27.t
+	desc = berez_eco.27.d
+	picture = GFX_report_event_TsarPolitruki
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.27.a
+		ai_chance = { factor = 1 }	
+	}
+}
+
+country_event = {#KrasnieVeterans
+	id = berez_eco.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.28"}
+	title = berez_eco.28.t
+	desc = berez_eco.28.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.28.a
+		ai_chance = { factor = 1 }	
+		tno_training_improve = yes
+	}
+}
+
+country_event = {#VelkomIntoNiggersUSAZone
+	id = berez_eco.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.29"}
+	title = berez_eco.29.t
+	desc = berez_eco.29.d
+	picture = GFX_report_event_VelcomeUsaNiggerZone
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.29.a
+		ai_chance = { factor = 1 }	
+		add_opinion_modifier = {
+			target = USA
+			modifier = MAR_old_svyazi
+		}
+	}
+}
+
+country_event = {#ShestDivizuiKruto
+	id = berez_eco.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.30"}
+	title = berez_eco.30.t
+	desc = berez_eco.30.d
+	picture = GFX_report_event_DlyaDzentelmani
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.30.a
+		ai_chance = { factor = 1 }	
+		398 = {
+			create_unit = {
+				division = "division_template = \"Dzhentelmeni Udachi\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+				owner = MAR
+			}
+			create_unit = {
+				division = "division_template = \"Dzhentelmeni Udachi\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+				owner = MAR
+			}
+		}
+	}
+}
+
+country_event = {#SpasiboZaPomosh
+	id = berez_eco.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.31"}
+	title = berez_eco.31.t
+	desc = berez_eco.31.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.31.a
+		ai_chance = { factor = 1 }	
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 425
+		}
+		add_equipment_to_stockpile = { 
+			type = support_equipment 
+			amount = 200
+		}
+	}
+}
+
+country_event = {#FSBSpasiOtLoli
+	id = berez_eco.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.32"}
+	title = berez_eco.32.t
+	desc = berez_eco.32.d
+	picture = GFX_report_event_RusskieVperedNaMoskvu
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.32.a
+		ai_chance = { factor = 1 }	
+		tno_training_improve = yes
+	}
+}
+
+country_event = {#BozheHraniNovuyuArmiu
+	id = berez_eco.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.33"}
+	title = berez_eco.33.t
+	desc = berez_eco.33.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.33.a
+		ai_chance = { factor = 1 }	
+		add_ideas = {
+			MAR_renewed_army
+		}
+		remove_ideas = {
+			MAR_oldfashion_army
+		}
+	}
+}
+
+country_event = {#PravoNaFuture
+	id = berez_eco.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.34"}
+	title = berez_eco.34.t
+	desc = berez_eco.34.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.34.a
+		ai_chance = { factor = 1 }	
+	}
+}
+
+country_event = {#NoMoreNemezkiBomb
+	id = berez_eco.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.35"}
+	title = berez_eco.35.t
+	desc = berez_eco.35.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_eco.35.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			load_focus_tree = {
+				tree = MAR_bombing_ot_AB
+				keep_completed = no
+			}
+		}			
+	}
+}
+
+country_event = {#Poprobuem
+	id = berez_eco.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.36"}
+	title = berez_eco.36.t
+	desc = berez_eco.36.d
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = berez_eco.36.a
+		ai_chance = { factor = 1 }	
+		hidden_effect = {
+			load_focus_tree = {
+				tree = MAR_bombing_ot_AB
+				keep_completed = no
+			}
+		}
+	}
+	
+}
+
+#####################
+#POST-BOMBING EVENTS#
+#####################
+country_event = { #BombStart
+	id = berez_bomb.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.1"}
+	title = berez_bomb.1.t
+	desc = berez_bomb.1.d
+	picture = GFX_report_event_Zhrebi_broshen
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		ai_chance = { factor = 1 }	
+		name = berez_bomb.1.a
+		add_political_power = 30	
+	}
+}
+
+country_event = { #NikakihZavodovVPodvalah!
+	id = berez_bomb.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.2"}
+	title = berez_bomb.2.t
+	desc = berez_bomb.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		ai_chance = { factor = 1 }	
+		name = berez_bomb.2.a
+		398 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { #VoodushevlenieRabochihxNashix
+	id = berez_bomb.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.3"}
+	title = berez_bomb.3.t
+	desc = berez_bomb.3.d
+	picture = GFX_report_event_Rabotagi
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_bomb.3.a
+		ai_chance = { factor = 1 }
+		add_timed_idea = {
+			idea = MAR_rabochie_ochen_vood
+			days = 365
+		}
+	}
+}
+
+country_event = { #ZaBereznikiUsrus
+	id = berez_bomb.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.4"}
+	title = berez_bomb.4.t
+	desc = berez_bomb.4.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_bomb.4.a
+		ai_chance = { factor = 1 }	
+		add_timed_idea = {
+			idea = MAR_slavsya_berezniki
+			days = 365
+		}		
+	}
+}
+
+country_event = { #StabilnostPartiiIDoma
+	id = berez_bomb.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.5"}
+	title = berez_bomb.5.t
+	desc = berez_bomb.5.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_bomb.5.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = despotism
+    		popularity = 0.03
+		}
+		add_stability = 0.03
+	}
+}
+
+country_event = { #PeshkiVlada?
+	id = berez_bomb.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.6"}
+	title = berez_bomb.6.t
+	desc = berez_bomb.6.d
+	picture = GFX_report_event_Peshki
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_bomb.6.a
+		ai_chance = { factor = 1 }	
+		add_political_power = 25
+		add_popularity = {
+			ideology = authoritarian_democrat
+    		popularity = -0.10
+		}
+	}
+}
+
+country_event = { #GloryToMladorossi
+	id = berez_bomb.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.7"}
+	title = berez_bomb.7.t
+	desc = berez_bomb.7.d
+    picture = GFX_report_event_NovieLica
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_bomb.7.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = despotism
+    		popularity = 0.03
+		}
+		add_political_power = 50			
+	}
+}
+
+country_event = { #AhhBillyTrenning
+	id = berez_bomb.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.8"}
+	title = berez_bomb.8.t
+	desc = berez_bomb.8.d
+	picture = GFX_report_event_Mass_Trenning
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_bomb.8.a
+		ai_chance = { factor = 1 }	
+		add_manpower = 5000
+		army_experience	= 15
+	}
+}
+
+country_event = { #PerevernutVseVVerhDnom
+	id = berez_bomb.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.9"}
+	title = berez_bomb.9.t
+	desc = berez_bomb.9.d
+	picture = GFX_report_event_Verh_dnom
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_bomb.9.a
+		ai_chance = { factor = 1 }	
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+		}
+		add_equipment_to_stockpile = { 
+			type = support_equipment 
+			amount = 250
+		}
+		add_equipment_to_stockpile = { 
+			type = artillery_equipment
+			amount = 300
+		}
+		add_equipment_to_stockpile = { 
+			type = motorized_equipment
+			amount = 100
+		}				
+	}
+}
+
+country_event = { #ZaRodinu
+	id = berez_bomb.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.10"}
+	title = berez_bomb.10.t
+	desc = berez_bomb.10.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_bomb.10.a
+		ai_chance = { factor = 1 }	
+		war_support_factor	= 0.10
+	}
+}
+
+country_event = { #ZaRusYaUsrus
+	id = berez_bomb.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.11"}
+	title = berez_bomb.11.t
+	desc = berez_bomb.11.d
+	picture = GFX_report_event_DlyaPervoyVoenki
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_bomb.11.a
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+   			target = PRM
+    		type = annex_everything
+		}			
+		add_timed_idea = {
+		    idea = MAR_attack_only_aria
+		    days = 90
+		}				
+	}
+	option = {
+		name = berez_bomb.11.b
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+   			target = PRM
+    		type = annex_everything
+		}			
+		add_timed_idea = {
+	    	idea = MAR_defence_only_aria
+	    	days = 90
+		}		
+	}
+	option = {
+		name = berez_bomb.11.c
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+   			target = PRM
+    		type = annex_everything
+		}			
+		add_timed_idea = {
+	    	idea = MAR_def_and_attack
+	    	days = 90
+		}				
+	}		
+}
+
+country_event = { #NovoeDrevo
+	id = berez_bomb.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_bomb.12"}
+	title = berez_bomb.12.t
+	desc = berez_bomb.12.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	option = {
+		name = berez_bomb.12.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			load_focus_tree = {
+				tree = MAR_voina
+				keep_completed = no
+			}	
+		}			
+	}
+}
+
+#######################################
+##            GUI BEREZNIKI          ##
+##               EVENTS              ##
+#######################################
+country_event = { #GuiStart
+	id = berez_mehanica.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_mehanica.1"}
+	title = berez_mehanica.1.t
+	desc = berez_mehanica.1.d
+	picture = GFX_report_event_NashiNachinania
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = berez_mehanica.1.a
+		ai_chance = { factor = 100 }	
+		set_country_flag = MAR_mehanica_opener_activation
+		set_variable = {
+			var = MAR_berezniki_pizdec
+			value = 1
+		}
+	}
+}
+
+#######################################
+country_event = { #Berezniki splits and takes the oil!
+	id = KIR.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KIR.30"}
+	title = KIR.30.t
+	desc = KIR.30.desc
+	picture = GFX_report_event_secret_squirrel_stuff
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = KIR.30.a
+		ai_chance = { factor = 1 }
+	}
+}
+#######################################
+
+country_event = { #Boina
+	id = berez_news.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_news.1"}
+	title = berez_news.1.t
+	desc = berez_news.1.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Boina
+	
+	option = {
+		name = berez_news.1.a
+		ai_chance = { factor = 1 }
+			
+	}
+}
+
+country_event = { #Tragedia
+	id = berez_news.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_news.2"}
+	title = berez_news.2.t
+	desc = berez_news.2.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Obval
+	
+	option = {
+		name = berez_news.2.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+	   			id = berez_news.3
+	    		days = 4
+			}
+		}		
+	}
+}
+
+country_event = { #Tragedia2
+	id = berez_news.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_news.3"}
+	title = berez_news.3.t
+	desc = berez_news.3.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Obval2
+	
+	option = {
+		add_political_power = 10
+		name = berez_news.3.a
+		ai_chance = { factor = 1 }		
+	}
+}
+
+country_event = { #Orel
+	id = berez_news.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_news.4"}
+	title = berez_news.4.t
+	desc = berez_news.4.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Orel
+	
+	option = {
+		name = berez_news.4.a
+		ai_chance = { factor = 1 }	
+		hidden_effect = {
+			country_event = {
+	   			id = berez_news.5
+	    		days = 3
+			}
+		}			
+	}
+}
+
+country_event = { #Orel2
+	id = berez_news.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_news.5"}
+	title = berez_news.5.t
+	desc = berez_news.5.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Orel2
+	
+	option = {
+		name = berez_news.5.a
+		ai_chance = { factor = 1 }		
+	}
+}
+
+country_event = { #Soldaten
+	id = berez_news.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_news.6"}
+	title = berez_news.6.t
+	desc = berez_news.6.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Den_Soldat
+	
+	option = {
+		name = berez_news.6.a
+		ai_chance = { factor = 1 }		
+	}
+}
+
+country_event = { #Dom
+	id = berez_news.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_news.7"}
+	title = berez_news.7.t
+	desc = berez_news.7.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Dom
+	
+	option = {
+		name = berez_news.7.a
+		ai_chance = { factor = 1 }		
+	}
+}
+
+
+#####################################################
+
+country_event = { #ArianWar
+	id = berez_voina.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.1"}
+	title = berez_voina.1.t
+	desc = berez_voina.1.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_1
+	
+	option = {
+		name = berez_voina.1.a
+		ai_chance = { factor = 1 }	
+		add_manpower = 200
+	}
+}
+
+country_event = { #SudVagner
+	id = berez_voina.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.2"}
+	title = berez_voina.2.t
+	desc = berez_voina.2.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_2
+	
+	option = {
+		name = berez_voina.2.a
+		ai_chance = { factor = 1 }	
+		add_stability = 0.05
+	}
+}
+
+country_event = { #BesedaSbatuskoi
+	id = berez_voina.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.3"}
+	title = berez_voina.3.t
+	desc = berez_voina.3.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_3
+	
+	option = {
+		name = berez_voina.3.a
+		ai_chance = { factor = 1 }	
+		annex_country = {
+			target = GAY
+			transfer_troops = yes
+		}
+	}
+}
+
+country_event = { #SudibaGainov
+	id = berez_voina.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.4"}
+	title = berez_voina.4.t
+	desc = berez_voina.4.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_4
+	
+	option = {
+		name = berez_voina.4.a
+		ai_chance = { factor = 1 }
+		add_ideas = MAR_monah_orden	
+	}
+	option = {
+		name = berez_voina.4.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.02
+		add_political_power = 15
+	}
+}
+
+country_event = { #MAR_new_rev
+	id = berez_voina.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.5"}
+	title = berez_voina.5.t
+	desc = berez_voina.5.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_5
+	option = {
+		name = berez_voina.5.a
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+   			target = KIR
+    		type = annex_everything
+		}
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #MAR_old_friend
+	id = berez_voina.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.6"}
+	title = berez_voina.6.t
+	desc = berez_voina.6.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_6
+	
+	option = {
+		name = berez_voina.6.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #MAR_change_color
+	id = berez_voina.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.7"}
+	title = berez_voina.7.t
+	desc = berez_voina.7.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_7
+	
+	option = {
+		name = berez_voina.7.a
+		ai_chance = { factor = 1 }
+		create_field_marshal = {
+			name = "Evgeny Messner"
+			picture = "Portrait_Mari_Yevgeny_Messner.dds"
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			traits = { organizer old_guard harsh_leader	}
+		}
+		create_corps_commander = {
+			name = "Georgiy Zagaynov"
+			picture = "Portrait_Mari_Vyatka_Georgey_Zagainov.dds"
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+			traits = { infantry_officer trait_engineer }
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = land_doctrine
+		}			
+	}
+}
+
+country_event = { #MAR_strateg_hueta
+	id = berez_voina.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.8"}
+	title = berez_voina.8.t
+	desc = berez_voina.8.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_8
+	
+	option = {
+		name = berez_voina.8.a
+		ai_chance = { factor = 1 }
+		army_experience = 10
+	}
+}
+
+country_event = { #MAR_pismo_sovesti
+	id = berez_voina.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.9"}
+	title = berez_voina.9.t
+	desc = berez_voina.9.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_9
+	
+	option = {
+		name = berez_voina.9.a
+		ai_chance = { factor = 1 }
+		BKR = {
+			country_event = { id = berez_voina.10 days = 1 }
+		}		
+	}
+}
+
+country_event = { #MAR_pismo_sovesti башкирам
+	id = berez_voina.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.10"}
+	title = berez_voina.10.t
+	desc = berez_voina.10.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_10
+	
+	option = {
+		name = berez_voina.10.a # соглашаются
+		ai_chance = { factor = 1 }
+		MAR = {
+			country_event = { id = berez_voina.11 days = 1 }
+		}
+	}
+	option = {
+		name = berez_voina.10.b # получают пизды
+		ai_chance = { factor = 1 }
+
+		MAR = {
+			country_event = { id = berez_voina.12 days = 1 }
+
+		}
+	}	
+}
+
+country_event = { #MAR_pismo_sovesti ответочка
+	id = berez_voina.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.11"}
+	title = berez_voina.11.t
+	desc = berez_voina.11.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_11
+	
+	option = {
+		name = berez_voina.11.a # получаем согласие
+		ai_chance = { factor = 1 }
+		annex_country = {
+			target = BKR
+			transfer_troops = yes
+		}
+	}
+}
+
+country_event = { #MAR_pismo_sovesti отказ
+	id = berez_voina.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.12"}
+	title = berez_voina.12.t
+	desc = berez_voina.12.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_12
+	
+	option = {
+		name = berez_voina.12.a #отказ
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+   			target = BKR
+    		type = annex_everything
+		}
+	}
+}
+
+country_event = { #MAR_vzatie_kazani
+	id = berez_voina.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.13"}
+	title = berez_voina.13.t
+	desc = berez_voina.13.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_13
+	
+	option = {
+		name = berez_voina.13.a
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+   			target = TAR
+    		type = annex_everything
+		}
+	}
+}
+
+country_event = { #MAR_automy_veri
+	id = berez_voina.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.14"}
+	title = berez_voina.14.t
+	desc = berez_voina.14.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_14
+	
+	option = {
+		name = berez_voina.14.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #MAR_new_admin_kazan
+	id = berez_voina.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.15"}
+	title = berez_voina.15.t
+	desc = berez_voina.15.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_15
+	
+	option = {
+		name = berez_voina.15.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+		add_stability = -0.05		
+	}
+}
+
+country_event = { #MAR_new_admin_kazan SUD NAD DEBILOM
+	id = berez_voina.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.16"}
+	title = berez_voina.16.t
+	desc = berez_voina.16.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_16
+	
+	option = {
+		name = berez_voina.16.a
+		ai_chance = { factor = 1 }		
+	}
+}
+
+country_event = { #MAR_tank_zjemchug_zapada
+	id = berez_voina.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.17"}
+	title = berez_voina.17.t
+	desc = berez_voina.17.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_17
+	
+	option = {
+		name = berez_voina.17.a
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+   			target = CHU
+    		type = annex_everything
+		}
+	}
+}
+
+country_event = { #MAR_tankov_brigadi
+	id = berez_voina.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.18"}
+	title = berez_voina.18.t
+	desc = berez_voina.18.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_18
+	
+	option = {
+		name = berez_voina.18.a
+		ai_chance = { factor = 1 }
+		add_equipment_to_stockpile = { 
+			type = motorized_equipment
+			amount = 250
+		}
+		add_equipment_to_stockpile = { 
+			type = APC_equipment
+			amount = 100
+		}
+		add_equipment_to_stockpile = { 
+			type = MBT_equipment
+			amount = 20
+		}									
+	}
+}
+
+country_event = { #MAR_tribunal_sam
+	id = berez_voina.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.19"}
+	title = berez_voina.19.t
+	desc = berez_voina.19.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_19
+	
+	option = {
+		name = berez_voina.19.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+		add_political_power = 50
+	}
+	option = {
+		name = berez_voina.19.b
+		ai_chance = { factor = 1 }
+		create_corps_commander = {
+			name = "Fyodor Trukhin"
+			picture = "Portrait_Mari_Fyodor_Trukhin.dds"
+			traits = {
+				politically_connected
+				career_officer
+				infantry_leader
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Pavel Butkov"
+			picture = "Portrait_Mari_Pavel_Butkov.dds"
+			traits = {
+				trait_cautious
+				infantry_leader
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}										
+	}	
+}
+
+country_event = { #MAR_spokoistvie_uga
+	id = berez_voina.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.20"}
+	title = berez_voina.20.t
+	desc = berez_voina.20.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_20
+	
+	option = {
+		name = berez_voina.20.a
+		ai_chance = { factor = 1 }
+		add_political_power = 50	
+	}
+}
+
+country_event = { #MAR_sever_sosat
+	id = berez_voina.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.21"}
+	title = berez_voina.21.t
+	desc = berez_voina.21.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_21
+	
+	option = {
+		name = berez_voina.21.a
+		ai_chance = { factor = 1 }
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+country_event = { #MAR_sladenikoe_predloj otrpavka
+	id = berez_voina.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.22"}
+	title = berez_voina.22.t
+	desc = berez_voina.22.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_22
+	
+	option = {
+		name = berez_voina.22.a
+		ai_chance = { factor = 1 }
+		VOL = {
+			country_event = { id = berez_voina.23 days = 1 }
+		}
+	}
+}
+
+country_event = { #MAR_sladenikoe_predloj prishlo
+	id = berez_voina.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.23"}
+	title = berez_voina.23.t
+	desc = berez_voina.23.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_23  #######################################################
+	
+	option = {
+		name = berez_voina.23.a
+		ai_chance = { factor = 0.5 }
+		MAR = {
+			country_event = { id = berez_voina.24 days = 1 }
+		}		
+	}
+	option = {
+		name = berez_voina.23.b
+		ai_chance = { factor = 0.5 }
+		MAR = {
+			country_event = { id = berez_voina.25 days = 1 }
+		}	
+	}
+}
+
+country_event = { #MAR_sladenikoe_predloj LEGKAYA POBEDA VMESTO OBEDA
+	id = berez_voina.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.24"}
+	title = berez_voina.24.t
+	desc = berez_voina.24.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_24
+	
+	option = {
+		name = berez_voina.24.a
+		ai_chance = { factor = 1 }
+		annex_country = {
+			target = VOL
+			transfer_troops = no
+		}
+	}
+}
+
+country_event = { #MAR_sladenikoe_predloj NIHUA NE POBEDA
+	id = berez_voina.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.25"}
+	title = berez_voina.25.t
+	desc = berez_voina.25.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_25
+	
+	option = {
+		name = berez_voina.25.a
+		ai_chance = { factor = 1 }
+		MAR = {
+			declare_war_on = {
+	   			target = VOL
+	    		type = annex_everything
+			}	
+		}
+	}
+}
+
+country_event = { #MAR_close_jopa
+	id = berez_voina.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.26"}
+	title = berez_voina.26.t
+	desc = berez_voina.26.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_26
+	
+	option = {
+		name = berez_voina.26.a
+		ai_chance = { factor = 1 }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 500
+		}				
+	}
+}
+
+country_event = { #MAR_prizma_jopi
+	id = berez_voina.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.27"}
+	title = berez_voina.27.t
+	desc = berez_voina.27.d
+	fire_only_once = no
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_27
+	
+	option = {
+		name = berez_voina.27.a
+		ai_chance = { factor = 1 }
+		NIK = {
+			country_event = { id = berez_voina.28 days = 1 }
+		}			
+	}
+}
+
+country_event = { #MAR_prizma_jopi komi
+	id = berez_voina.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.28"}
+	title = berez_voina.28.t
+	desc = berez_voina.28.d
+	fire_only_once = no
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_28
+	timeout_days = 5
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = berez_voina.28.a
+		ai_chance = { factor = 1 }
+		NIK = {	
+			country_event = { id = berez_voina.29 days = 1 } 	
+		}	
+	}
+}
+
+country_event = { #MAR_prizma_jopi komi2
+	id = berez_voina.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.29"}
+	title = berez_voina.29.t
+	desc = berez_voina.29.d
+	fire_only_once = no
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_29
+	timeout_days = 5
+	mean_time_to_happen = { days = 2 }
+	option = {
+		name = berez_voina.29.a
+		ai_chance = { factor = 1 }
+		MAR = {
+			country_event = { id = berez_voina.30 days = 1 }
+		}	
+	}
+	option = {
+		name = berez_voina.29.b
+		trigger = {
+			NIK = {
+				is_ai = no
+			}
+		}
+		MAR = {
+			country_event = { id = berez_voina.31 days = 1 }
+		}
+	}	
+}
+
+country_event = { #MAR_prizma_jopi POBEDA ROSSII
+	id = berez_voina.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.30"}
+	title = berez_voina.30.t
+	desc = berez_voina.30.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_30
+	immediate = {
+		set_global_flag = nik_fall
+	}	
+	option = {
+		name = berez_voina.30.a
+		ai_chance = { factor = 1 }
+		annex_country = {
+			target = NIK
+			transfer_troops = yes
+		}	
+	}	
+}
+
+country_event = { #MAR_prizma_jopi PIZDA NIK
+	id = berez_voina.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.31"}
+	title = berez_voina.31.t
+	desc = berez_voina.31.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	picture = GFX_report_event_Voina_31
+	
+	option = {
+		name = berez_voina.31.a
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+   			target = NIK
+    		type = annex_everything
+		}		
+	}
+}
+
+country_event = { # VZATIE KOMI
+	id = berez_voina.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.32"}
+	title = berez_voina.32.t
+	desc = berez_voina.32.d
+	fire_only_once = yes
+	picture = GFX_report_event_Voina_32
+	trigger = {
+		397 = {
+			is_controlled_by = MAR
+		}
+		NOT = { has_global_flag = nik_fall }
+	}
+	option = {
+		name = berez_voina.32.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # MAR_verbovka
+	id = berez_voina.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.33"}
+	title = berez_voina.33.t
+	desc = berez_voina.33.d
+	fire_only_once = yes
+	picture = GFX_report_event_Voina_33
+	is_triggered_only = yes
+
+	option = {
+		name = berez_voina.33.a
+		ai_chance = { factor = 1 }
+		swap_ideas = {
+     		remove_idea = MAR_Nina_Krivosheina_eco
+    		add_idea = MAR_Alexey_Kosygin_eco
+		}
+	}
+}
+
+country_event = { # MAR_radical_rep
+	id = berez_voina.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.34"}
+	title = berez_voina.34.t
+	desc = berez_voina.34.d
+	fire_only_once = yes
+	picture = GFX_report_event_Voina_34
+	is_triggered_only = yes
+
+	option = {
+		name = berez_voina.34.a
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+   			target = NIK
+    		type = annex_everything
+		}		
+	}
+}
+
+country_event = { # MAR_help_utopauhix
+	id = berez_voina.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.35"}
+	title = berez_voina.35.t
+	desc = berez_voina.35.d
+	fire_only_once = yes
+	picture = GFX_report_event_Voina_35
+	is_triggered_only = yes
+
+	option = {
+		name = berez_voina.35.a
+		ai_chance = { factor = 1 }
+		swap_ideas = {
+     		remove_idea = MAR_Nina_Krivosheina_eco
+    		add_idea = MAR_Alexey_Kosygin_eco
+		}		
+	}
+}
+
+country_event = { # MAR_radical_rep SUD PRI ANKAPE
+	id = berez_voina.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.36"}
+	title = berez_voina.36.t
+	desc = berez_voina.36.d
+	fire_only_once = yes
+	picture = GFX_report_event_Voina_36
+	is_triggered_only = yes
+
+	option = {
+		name = berez_voina.36.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.02
+	}
+}
+
+country_event = { # MAR_radical_rep SUD PRI ANKAPE2
+	id = berez_voina.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.37"}
+	title = berez_voina.37.t
+	desc = berez_voina.37.d
+	fire_only_once = yes
+	picture = GFX_report_event_Voina_37
+	is_triggered_only = yes
+
+	option = {
+		name = berez_voina.37.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.03
+	}
+}
+
+country_event = { # MAR_Brother_Gun
+	id = berez_voina.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.38"}
+	title = berez_voina.38.t
+	desc = berez_voina.38.d
+	fire_only_once = yes
+	picture = GFX_report_event_Voina_38
+	is_triggered_only = yes
+
+	option = {
+		name = berez_voina.38.a
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+   			target = WRS
+    		type = annex_everything
+		}		
+	}
+}
+
+country_event = { # MAR_Amnistia
+	id = berez_voina.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.39"}
+	title = berez_voina.39.t
+	desc = berez_voina.39.d
+	fire_only_once = yes
+	picture = GFX_report_event_Voina_39
+	is_triggered_only = yes
+
+	option = {
+		name = berez_voina.39.a
+		ai_chance = { factor = 1 }
+		add_manpower = 10000
+		add_war_support = 0.05
+	}
+}
+
+country_event = { # MAR_Mladorosskay_mechta 
+	id = berez_voina.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.40"}
+	title = berez_voina.40.t
+	desc = berez_voina.40.d
+	fire_only_once = yes
+	picture = GFX_report_event_Voina_40
+	is_triggered_only = yes
+
+	option = {
+		name = berez_voina.40.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+		load_focus_tree = MAR_Belozerski_tree
+	}
+}
+
+country_event = { # MAR_Mladorosskay_mechta 
+	id = berez_voina.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.41"}
+	title = berez_voina.40.t
+	desc = berez_voina.40.d
+	fire_only_once = yes
+	picture = GFX_report_event_Voina_41
+	is_triggered_only = yes
+
+	option = {
+		name = berez_voina.41.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+	}
+}
+
+country_event = { # MAR_Mladorosskay_mechta 
+	id = berez_voina.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_voina.42"}
+	title = berez_voina.40.t
+	desc = berez_voina.40.d
+	fire_only_once = yes
+	picture = GFX_report_event_Voina_42
+	is_triggered_only = yes
+
+	option = {
+		name = berez_voina.42.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+	}
+}
+
+country_event = { # MAR_pohod_the_end
+	id = berez_zemsob.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.1"}
+	title = berez_zemsob.1.t
+	desc = berez_zemsob.1.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_1
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.1.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.1
+	}
+}
+
+country_event = { # MAR_pereezd
+	id = berez_zemsob.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.2"}
+	title = berez_zemsob.2.t
+	desc = berez_zemsob.2.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_2
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.2.a
+		ai_chance = { factor = 1 }
+		set_capital = 397
+	}
+	option = {
+		name = berez_zemsob.2.b
+		ai_chance = { factor = 1 }
+		set_capital = 400
+	}
+}
+
+country_event = { # MAR_izbirateli
+	id = berez_zemsob.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.3"}
+	title = berez_zemsob.3.t
+	desc = berez_zemsob.3.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_3
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.3.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+	}
+}
+
+country_event = { # MAR_kandidati BELOZERSKI
+	id = berez_zemsob.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.4"}
+	title = berez_zemsob.4.t
+	desc = berez_zemsob.4.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_4
+	trigger = {
+		tag = MAR
+		NOT = { has_completed_focus = MAR_kandidati }
+		focus_progress = {
+			focus = MAR_kandidati
+			progress > 0.16
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}	
+	option = {
+		name = berez_zemsob.4.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = berez_zemsob.5 days = 5
+			}
+		}
+	}
+}
+
+country_event = { # MAR_kandidati Maria Romovaya BABA JABA
+	id = berez_zemsob.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.5"}
+	title = berez_zemsob.5.t
+	desc = berez_zemsob.5.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_5
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.5.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = berez_zemsob.6 days = 5
+			}
+		}
+	}
+}
+
+country_event = { # MAR_kandidati KAKAYA TO HUETA
+	id = berez_zemsob.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.6"}
+	title = berez_zemsob.6.t
+	desc = berez_zemsob.6.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_6
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.6.a
+		ai_chance = { factor = 1 }
+				hidden_effect = {
+			country_event = {
+				id = berez_zemsob.7 days = 5
+			}
+		}
+	}
+}
+
+country_event = { # MAR_kandidati ROMANOV LEHA U ROMANOV LEHA E
+	id = berez_zemsob.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.7"}
+	title = berez_zemsob.7.t
+	desc = berez_zemsob.7.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_7
+	is_triggered_only = yes	
+	
+	option = {
+		name = berez_zemsob.7.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # MAR_kandidati VIBORI
+	id = berez_zemsob.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.8"}
+	title = berez_zemsob.8.t
+	desc = berez_zemsob.8.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_8
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.8.a
+		ai_chance = { factor = 1 }
+		add_political_power = 15
+	}
+}
+
+country_event = { # MAR_Char_and_Regent
+	id = berez_zemsob.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.9"}
+	title = berez_zemsob.9.t
+	desc = berez_zemsob.9.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_9
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.9.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+	}
+}
+
+country_event = { # MAR_help_bednim
+	id = berez_zemsob.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.10"}
+	title = berez_zemsob.10.t
+	desc = berez_zemsob.10.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_10
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.10.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+
+	}
+}
+
+country_event = { # MAR_vstrecha_s_daunami
+	id = berez_zemsob.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.11"}
+	title = berez_zemsob.11.t
+	desc = berez_zemsob.11.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_11
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.11.a
+		ai_chance = { factor = 1 }
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		
+	}
+}
+
+country_event = { # MAR_Our_party
+	id = berez_zemsob.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.12"}
+	title = berez_zemsob.12.t
+	desc = berez_zemsob.12.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_12
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.12.a
+		ai_chance = { factor = 1 }
+		add_political_power = 50		
+	}
+}
+
+country_event = { # MAR_char_general
+	id = berez_zemsob.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.13"}
+	title = berez_zemsob.13.t
+	desc = berez_zemsob.13.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_13
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.13.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05	
+	}
+}
+
+country_event = { # MAR_blagoslov_predkov
+	id = berez_zemsob.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.14"}
+	title = berez_zemsob.14.t
+	desc = berez_zemsob.14.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_14
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.14.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+		add_political_power = 25
+	}
+}
+
+country_event = { # MAR_Svayzi_proshlogo
+	id = berez_zemsob.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.15"}
+	title = berez_zemsob.15.t
+	desc = berez_zemsob.15.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_15
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.15.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # MAR_Char_army
+	id = berez_zemsob.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.16"}
+	title = berez_zemsob.16.t
+	desc = berez_zemsob.16.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_16
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.16.a
+		ai_chance = { factor = 1 }
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+country_event = { # MAR_Char_ot_naroda
+	id = berez_zemsob.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.17"}
+	title = berez_zemsob.17.t
+	desc = berez_zemsob.17.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_17
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.17.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+	}
+}
+
+country_event = { # MAR_opati_sladkoe_predlojenie
+	id = berez_zemsob.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.18"}
+	title = berez_zemsob.18.t
+	desc = berez_zemsob.18.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_18
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.18.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+	}
+}
+
+country_event = { # MAR_everyman_char
+	id = berez_zemsob.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.19"}
+	title = berez_zemsob.19.t
+	desc = berez_zemsob.19.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_19
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.19.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # MAR_technocraty
+	id = berez_zemsob.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.20"}
+	title = berez_zemsob.20.t
+	desc = berez_zemsob.20.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_20
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.20.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # MAR_final_vibori
+	id = berez_zemsob.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.21"}
+	title = berez_zemsob.21.t
+	desc = berez_zemsob.21.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_21
+	trigger = {
+		tag = MAR
+		NOT = { has_completed_focus = MAR_final_vibori }
+		focus_progress = {
+			focus = MAR_final_vibori
+			progress > 0.5
+		}
+	}
+	option = {
+		name = berez_zemsob.21.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # MAR_final_vibori WIN SEREGA BELII
+	id = berez_zemsob.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.22"}
+	title = berez_zemsob.22.t
+	desc = berez_zemsob.22.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_22
+	is_triggered_only = yes
+
+	option = {
+			
+		name = berez_zemsob.22.a
+		ai_chance = { factor = 1 }
+		set_politics = {
+			ruling_party = despotism
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.05
+		}
+		set_country_flag = MAR_POLITICS_RESOLVED
+		create_country_leader = {
+			name = "Sergey I"
+			desc = "POLITICS_SERGEY_BELOZERSKI_DESC"
+			picture = "Portrait_Berezniki_Belozerskid.dds"
+			expire = "1999.1.1"
+			ideology = despotism_subtype
+			traits = {
+				char_general
+			}
+		}	
+		swap_ideas = {
+     		remove_idea = MAR_Sergey_Belozerski_sec
+    		add_idea = MAR_Vladimir_Gil_sec
+		}
+		swap_ideas = {
+     		remove_idea = MAR_Sergey_Obolensky_hog
+    		add_idea = MAR_Alexander_Kazembek_hog
+		}						
+		if = {
+			limit = { has_idea = MAR_regent_without_tsar_1 }
+			remove_ideas = MAR_regent_without_tsar_1
+		}
+		else_if = {
+			limit = { has_idea = MAR_regent_without_tsar_2 }
+			remove_ideas = MAR_regent_without_tsar_2
+		}
+		else_if = {
+			limit = { has_idea = MAR_regent_without_tsar_3 }
+			remove_ideas = MAR_regent_without_tsar_3
+		}									
+	}
+}
+
+country_event = { # MAR_final_vibori MARIA WIN
+	id = berez_zemsob.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.23"}
+	title = berez_zemsob.23.t
+	desc = berez_zemsob.23.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_23
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.23.a
+		ai_chance = { factor = 1 }
+		set_politics = {
+			ruling_party = authoritarian_democrat
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.4
+		}
+		set_country_flag = MAR_POLITICS_RESOLVED		
+		create_country_leader = {
+			name = "Maria I"
+			desc = "POLITICS_MARIA_ROMANOVA_DESC"
+			picture = "Portrait_Berezniki_Maria_Vladimirovna.dds"
+			expire = "1999.1.1"
+			ideology = authoritarian_democrat_subtype
+			traits = {
+				narod_lubimka
+			}
+		}
+		swap_ideas = {
+     		remove_idea = MAR_Sergey_Obolensky_hog
+    		add_idea = MAR_Alexander_Kazembek_hog
+		}
+		if = {
+			limit = { has_idea = MAR_regent_without_tsar_1 }
+			remove_ideas = MAR_regent_without_tsar_1
+		}
+		else_if = {
+			limit = { has_idea = MAR_regent_without_tsar_2 }
+			remove_ideas = MAR_regent_without_tsar_2
+		}
+		else_if = {
+			limit = { has_idea = MAR_regent_without_tsar_3 }
+			remove_ideas = MAR_regent_without_tsar_3
+		}							
+	}
+}
+
+country_event = { # MAR_final_vibori ROMANOV WIN
+	id = berez_zemsob.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_zemsob.24"}
+	title = berez_zemsob.24.t
+	desc = berez_zemsob.24.d
+	fire_only_once = yes
+	picture = GFX_report_event_zemsob_24
+	is_triggered_only = yes
+
+	option = {
+		name = berez_zemsob.24.a
+		ai_chance = { factor = 1 }
+		set_politics = {
+			ruling_party = socialist
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.4
+		}
+		set_country_flag = MAR_POLITICS_RESOLVED		
+		create_country_leader = {
+			name = "Alexey II"
+			desc = "POLITICS_ALEXEY_KOSYGIN_DESC"
+			picture = "Portrait_Berezniki_Kosygind.dds"
+			expire = "1999.1.1"
+			ideology = socialist_subtype
+			traits = {
+				char_reformator
+			}
+		}
+		swap_ideas = {
+     		remove_idea = MAR_Sergey_Obolensky_hog
+    		add_idea = MAR_Alexander_Kazembek_hog
+		}
+		if = {
+			limit = { has_idea = MAR_regent_without_tsar_1 }
+			remove_ideas = MAR_regent_without_tsar_1
+		}
+		else_if = {
+			limit = { has_idea = MAR_regent_without_tsar_2 }
+			remove_ideas = MAR_regent_without_tsar_2
+		}
+		else_if = {
+			limit = { has_idea = MAR_regent_without_tsar_3 }
+			remove_ideas = MAR_regent_without_tsar_3
+		}								
+	}
+}
+
+news_event = { # Obiedinenie jopi Belozerski
+	id = berez_world_news.1
+	title = berez_world_news.1.t
+	desc = berez_world_news.1.d
+	picture = GFX_berez_world_news_001
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = berez_world_news.1.a
+	}
+}
+
+news_event = { # Obiedinenie jopi Maria ROM
+	id = berez_world_news.2
+	title = berez_world_news.2.t
+	desc = berez_world_news.2.d
+	picture = GFX_berez_world_news_002
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = berez_world_news.2.a
+	}
+}
+
+news_event = { # Obiedinenie jopi Leha lepoha
+	id = berez_world_news.3
+	title = berez_world_news.3.t
+	desc = berez_world_news.3.d
+	picture = GFX_berez_world_news_003
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = berez_world_news.3.a
+	}
+}
+
+
+
+#####################################################################################
+################################### SERGO BELII #####################################
+#####################################################################################
+
+
+country_event = { # MAR_pervii_ukaz
+	id = berez_belozerski.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.1"}
+	title = berez_belozerski.1.t
+	desc = berez_belozerski.1.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.1
+
+	option = {
+		name = berez_belozerski.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # MAR_svoboda_vibora
+	id = berez_belozerski.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.2"}
+	title = berez_belozerski.2.t
+	desc = berez_belozerski.2.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.2
+
+	option = {
+		name = berez_belozerski.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # MAR_novia_soveti
+	id = berez_belozerski.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.3"}
+	title = berez_belozerski.3.t
+	desc = berez_belozerski.3.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.3
+
+	option = {
+		name = berez_belozerski.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # MAR_uchrejdenie_prikazov
+	id = berez_belozerski.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.4"}
+	title = berez_belozerski.4.t
+	desc = berez_belozerski.4.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.4
+
+	option = {
+		name = berez_belozerski.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # MAR_cherkovni_vopros
+	id = berez_belozerski.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.5"}
+	title = berez_belozerski.5.t
+	desc = berez_belozerski.5.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.5
+
+	option = {
+		name = berez_belozerski.5.a
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = berez_belozerski.5.b
+		ai_chance = { factor = 1 }
+		swap_ideas = {
+		    remove_idea = tno_religious_rights_state_religion
+		    add_idea = tno_religious_rights_pluralism
+		}
+	}	
+}
+
+country_event = { # MAR_kozli_opuhenia
+	id = berez_belozerski.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.6"}
+	title = berez_belozerski.6.t
+	desc = berez_belozerski.6.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.6
+
+	option = {
+		name = berez_belozerski.6.a
+		ai_chance = { factor = 1 }
+	}	
+}
+
+country_event = { # MAR_vspomnit_uspeh
+	id = berez_belozerski.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.7"}
+	title = berez_belozerski.7.t
+	desc = berez_belozerski.7.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.7
+
+	option = {
+		name = berez_belozerski.7.a
+		ai_chance = { factor = 1 }
+	}	
+}
+
+country_event = { # MAR_uroki_zubatova
+	id = berez_belozerski.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.8"}
+	title = berez_belozerski.8.t
+	desc = berez_belozerski.8.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.8
+
+	option = {
+		name = berez_belozerski.8.a
+		ai_chance = { factor = 1 }	
+	}	
+}
+
+country_event = { # MAR_pervi_siezd
+	id = berez_belozerski.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.9"}
+	title = berez_belozerski.9.t
+	desc = berez_belozerski.9.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.9
+
+	option = {
+		name = berez_belozerski.9.a
+		ai_chance = { factor = 1 }
+	}	
+}
+
+country_event = { # MAR_posol_prikaz
+	id = berez_belozerski.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.10"}
+	title = berez_belozerski.10.t
+	desc = berez_belozerski.10.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.10
+
+	option = {
+		name = berez_belozerski.10.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_torgovie_anali
+	id = berez_belozerski.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.12"}
+	title = berez_belozerski.11.t
+	desc = berez_belozerski.11.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.11
+
+	option = {
+		name = berez_belozerski.11.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_vstrecha_dvuh_orlov
+	id = berez_belozerski.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.13"}
+	title = berez_belozerski.12.t
+	desc = berez_belozerski.12.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.12
+
+	option = {
+		name = berez_belozerski.12.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_podrjka_ofn
+	id = berez_belozerski.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.13"}
+	title = berez_belozerski.13.t
+	desc = berez_belozerski.13.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.13
+
+	option = {
+		name = berez_belozerski.13.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_russkie_dobrovolchi
+	id = berez_belozerski.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.14"}
+	title = berez_belozerski.14.t
+	desc = berez_belozerski.14.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.14
+
+	option = {
+		name = berez_belozerski.14.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+### Belozer ECO ###
+
+country_event = { # MAR_reanim_eco
+	id = berez_belozerski.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.15"}
+	title = berez_belozerski.15.t
+	desc = berez_belozerski.15.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.15
+
+	option = {
+		name = berez_belozerski.15.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_sistema_obr
+	id = berez_belozerski.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.15"}
+	title = berez_belozerski.16.t
+	desc = berez_belozerski.16.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.16
+
+	option = {
+		name = berez_belozerski.16.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_naykogradi
+	id = berez_belozerski.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.17"}
+	title = berez_belozerski.17.t
+	desc = berez_belozerski.17.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.17
+
+	option = {
+		name = berez_belozerski.17.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_econom_prikaz
+	id = berez_belozerski.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.18"}
+	title = berez_belozerski.18.t
+	desc = berez_belozerski.18.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.18
+
+	option = {
+		name = berez_belozerski.18.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_priv_invest
+	id = berez_belozerski.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.19"}
+	title = berez_belozerski.19.t
+	desc = berez_belozerski.19.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.19
+
+	option = {
+		name = berez_belozerski.19.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_stroim_infry
+	id = berez_belozerski.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.20"}
+	title = berez_belozerski.20.t
+	desc = berez_belozerski.20.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.20
+
+	option = {
+		name = berez_belozerski.20.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_prom_centr
+	id = berez_belozerski.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.21"}
+	title = berez_belozerski.21.t
+	desc = berez_belozerski.21.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.21
+
+	option = {
+		name = berez_belozerski.21.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_ih_znania
+	id = berez_belozerski.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.22"}
+	title = berez_belozerski.22.t
+	desc = berez_belozerski.22.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.22
+
+	option = {
+		name = berez_belozerski.22.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_epoxa_prosveta
+	id = berez_belozerski.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.23"}
+	title = berez_belozerski.23.t
+	desc = berez_belozerski.23.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.23
+
+	option = {
+		name = berez_belozerski.23.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_voen_prikaz
+	id = berez_belozerski.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.24"}
+	title = berez_belozerski.24.t
+	desc = berez_belozerski.24.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.24
+
+	option = {
+		name = berez_belozerski.24.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_exper_KB
+	id = berez_belozerski.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.25"}
+	title = berez_belozerski.25.t
+	desc = berez_belozerski.25.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.25
+
+	option = {
+		name = berez_belozerski.25.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_razv_tren
+	id = berez_belozerski.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.26"}
+	title = berez_belozerski.26.t
+	desc = berez_belozerski.26.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.26
+
+	option = {
+		name = berez_belozerski.26.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_tsar_gvardia
+	id = berez_belozerski.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.27"}
+	title = berez_belozerski.27.t
+	desc = berez_belozerski.27.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.27
+
+	option = {
+		name = berez_belozerski.27.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_yroki_urala
+	id = berez_belozerski.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.28"}
+	title = berez_belozerski.28.t
+	desc = berez_belozerski.28.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.28
+
+	option = {
+		name = berez_belozerski.28.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_rus_ybersoldat
+	id = berez_belozerski.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.29"}
+	title = berez_belozerski.29.t
+	desc = berez_belozerski.29.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.29
+
+	option = {
+		name = berez_belozerski.29.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_anti_nemec
+	id = berez_belozerski.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.30"}
+	title = berez_belozerski.30.t
+	desc = berez_belozerski.30.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.30
+
+	option = {
+		name = berez_belozerski.30.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_orel_back
+	id = berez_belozerski.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.31"}
+	title = berez_belozerski.31.t
+	desc = berez_belozerski.31.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.31
+
+	option = {
+		name = berez_belozerski.31.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_proniknovenie_vtil
+	id = berez_belozerski.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.32"}
+	title = berez_belozerski.32.t
+	desc = berez_belozerski.32.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.32
+
+	option = {
+		name = berez_belozerski.32.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_sibir_prostor
+	id = berez_belozerski.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.33"}
+	title = berez_belozerski.33.t
+	desc = berez_belozerski.33.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.33
+
+	option = {
+		name = berez_belozerski.33.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_omsk_problem
+	id = berez_belozerski.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.34"}
+	title = berez_belozerski.34.t
+	desc = berez_belozerski.34.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.34
+
+	option = {
+		name = berez_belozerski.34.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_chelover
+	id = berez_belozerski.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.35"}
+	title = berez_belozerski.35.t
+	desc = berez_belozerski.35.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.35
+
+	option = {
+		name = berez_belozerski.35.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_dragynov
+	id = berez_belozerski.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.36"}
+	title = berez_belozerski.36.t
+	desc = berez_belozerski.36.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.36
+
+	option = {
+		name = berez_belozerski.36.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_poezdka_amerika
+	id = berez_belozerski.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.37"}
+	title = berez_belozerski.37.t
+	desc = berez_belozerski.37.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.37
+
+	option = {
+		name = berez_belozerski.37.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_edinaa_rus
+	id = berez_belozerski.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.38"}
+	title = berez_belozerski.38.t
+	desc = berez_belozerski.38.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.37
+
+	option = {
+		name = berez_belozerski.38.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+### Kazembek ###
+
+country_event = { # MAR_regents
+	id = berez_kazembek.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.1"}
+	title = berez_kazembek.1.t
+	desc = berez_kazembek.1.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.1.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_golden
+	id = berez_kazembek.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.2"}
+	title = berez_kazembek.2.t
+	desc = berez_kazembek.2.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.2.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_part_zont
+	id = berez_kazembek.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.3"}
+	title = berez_kazembek.3.t
+	desc = berez_kazembek.3.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.3.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_old_opyx
+	id = berez_kazembek.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.4"}
+	title = berez_kazembek.4.t
+	desc = berez_kazembek.4.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.4.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_burocrat
+	id = berez_kazembek.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.5"}
+	title = berez_kazembek.5.t
+	desc = berez_kazembek.5.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.5.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_renesans
+	id = berez_kazembek.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.6"}
+	title = berez_kazembek.6.t
+	desc = berez_kazembek.6.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.6.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_part_dochki
+	id = berez_kazembek.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.7"}
+	title = berez_kazembek.7.t
+	desc = berez_kazembek.7.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.7.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_prav_mish
+	id = berez_kazembek.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.8"}
+	title = berez_kazembek.8.t
+	desc = berez_kazembek.8.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.8.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_regent_sesd
+	id = berez_kazembek.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.9"}
+	title = berez_kazembek.9.t
+	desc = berez_kazembek.9.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.9.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+### Kazeembek Eco ###
+
+country_event = { # MAR_vsnh
+	id = berez_kazembek.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.10"}
+	title = berez_kazembek.10.t
+	desc = berez_kazembek.10.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.10.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_russan_krest
+	id = berez_kazembek.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.11"}
+	title = berez_kazembek.11.t
+	desc = berez_kazembek.11.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.11.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_hleb_sol
+	id = berez_kazembek.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.12"}
+	title = berez_kazembek.12.t
+	desc = berez_kazembek.12.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.12.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_Soveti
+	id = berez_kazembek.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.13"}
+	title = berez_kazembek.13.t
+	desc = berez_kazembek.13.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.13.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_control_chasnik
+	id = berez_kazembek.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.14"}
+	title = berez_kazembek.14.t
+	desc = berez_kazembek.14.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.14.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_koleso_delaet
+	id = berez_kazembek.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.15"}
+	title = berez_kazembek.15.t
+	desc = berez_kazembek.15.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.15.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_jyngle
+	id = berez_kazembek.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.16"}
+	title = berez_kazembek.16.t
+	desc = berez_kazembek.16.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.16.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+### Kazembek voin ###
+
+country_event = { # MAR_mladoros_army
+	id = berez_kazembek.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.17"}
+	title = berez_kazembek.17.t
+	desc = berez_kazembek.17.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.17.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_tank_kb
+	id = berez_kazembek.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.18"}
+	title = berez_kazembek.18.t
+	desc = berez_kazembek.18.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.18.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_til_obeshecnie
+	id = berez_kazembek.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.19"}
+	title = berez_kazembek.19.t
+	desc = berez_kazembek.19.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.19.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_strafbat
+	id = berez_kazembek.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.20"}
+	title = berez_kazembek.20.t
+	desc = berez_kazembek.20.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.20.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_net_predely
+	id = berez_kazembek.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.21"}
+	title = berez_kazembek.21.t
+	desc = berez_kazembek.21.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.21.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+### BEK vnespolit ###
+
+country_event = { # MAR_vihod_zabv
+	id = berez_kazembek.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.22"}
+	title = berez_kazembek.22.t
+	desc = berez_kazembek.22.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.22.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_filofos_paroxod
+	id = berez_kazembek.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.23"}
+	title = berez_kazembek.23.t
+	desc = berez_kazembek.23.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.23.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_kazachki
+	id = berez_kazembek.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.24"}
+	title = berez_kazembek.24.t
+	desc = berez_kazembek.24.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.24.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_predstavitel_ofn
+	id = berez_kazembek.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.25"}
+	title = berez_kazembek.25.t
+	desc = berez_kazembek.25.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.25.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_parnte_jup
+	id = berez_kazembek.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.26"}
+	title = berez_kazembek.26.t
+	desc = berez_kazembek.26.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.26.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_mnogovektor
+	id = berez_kazembek.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.27"}
+	title = berez_kazembek.27.t
+	desc = berez_kazembek.27.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.27.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+
+country_event = { # MAR_Vyatka_conference
+	id = berez_kazembek.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_kazembek.28"}
+	title = berez_kazembek.28.t
+	desc = berez_kazembek.28.d
+	fire_only_once = yes
+
+	option = {
+		name = berez_kazembek.28.a
+		ai_chance = { factor = 1 }		
+	}	
+}

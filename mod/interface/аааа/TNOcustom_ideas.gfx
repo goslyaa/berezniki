@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_KOM_aue_edino"
+		texturefile = "gfx/interface/ideas/KOM/idea_KOM_arestanti_edini.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOM_vorovskoy_zakon_nol"
+		texturefile = "gfx/interface/ideas/KOM/idea_KOM_vorovskoy_zakon_nol.dds"
+	}
+}

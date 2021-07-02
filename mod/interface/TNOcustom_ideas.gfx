@@ -1,0 +1,51 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_MAR_regent_ne_car"
+		texturefile = "gfx/interface/ideas/MAR/idea_MAR_regent_ne_car.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MAR_dohlaya_armia"
+		texturefile = "gfx/interface/ideas/MAR/idea_MAR_dohlaya_armia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MAR_carskye_politruki"
+		texturefile = "gfx/interface/ideas/MAR/idea_MAR_carskye_politruki.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MAR_help_workers"
+		texturefile = "gfx/interface/ideas/MAR/idea_MAR_Help_workers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MAR_New_army"
+		texturefile = "gfx/interface/ideas/MAR/idea_MAR_New_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MAR_Armour_of_God"
+		texturefile = "gfx/interface/ideas/MAR/idea_MAR_Armour_of_God.dds"
+	}	
+	SpriteType = {
+		name = "GFX_idea_MAR_minister_Sergey_Belozersky"
+		texturefile = "gfx/interface/ideas/MAR/ministers/MAR_minister_Sergey_Belozersky.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MAR_minister_Alexei_Kosygin"
+		texturefile = "gfx/interface/ideas/MAR/ministers/MAR_minister_Alexei_Kosygin.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MAR_minister_Kazembek"
+		texturefile = "gfx/interface/ideas/MAR/ministers/MAR_minister_Kazembek.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MAR_minister_Gil"
+		texturefile = "gfx/interface/ideas/MAR/ministers/MAR_minister_Gil.dds"
+	}		
+	SpriteType = {
+		name = "GFX_idea_MAR_minister_Cyril_Yelita_Vilchkovsky"
+		texturefile = "gfx/interface/ideas/MAR/ministers/MAR_minister_Cyril_Yelita_Vilchkovsky.dds"
+	}			
+}

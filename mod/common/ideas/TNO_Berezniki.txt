@@ -1,0 +1,631 @@
+ideas = {
+	country = {
+		MAR_forced_syncretisism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_forced_syncretisism"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_Forced_Syncretism
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.2
+			}
+		}
+	}
+
+	country = {
+		MAR_regent_without_tsar_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_regent_without_tsar_1"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_regent_ne_car
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.75
+				stability_factor = -0.3
+			}
+		}
+	}
+
+	country = {
+		MAR_regent_without_tsar_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_regent_without_tsar_2"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_regent_ne_car
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.6
+				stability_factor = -0.25
+			}
+		}
+	}
+
+	country = {
+		MAR_regent_without_tsar_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_regent_without_tsar_3"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_regent_ne_car
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -0.10
+			}
+		}
+	}
+
+	country = {
+		MAR_oldfashion_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: MAR_oldfashion_army"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_dohlaya_armia
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.2
+				army_morale_factor = -0.2
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+	}
+
+	country = {
+		MAR_renewed_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: MAR_renewed_army"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_New_army
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				training_time_army_factor = -0.05
+				max_planning = 0.10
+			}
+		}
+	}
+
+	country = {
+		MAR_helping_people = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: MAR_helping_people"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_help_workers
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		MAR_komissars_in_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: MAR_komissars_in_army"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_carskye_politruki
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				political_power_factor = -0.010
+			}
+		}
+	}
+
+	country = {
+		MAR_rabochie_ochen_vood = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_rabochie_ochen_vood "}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_help_workers
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+	}
+	country = {
+		MAR_slavsya_berezniki = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_slavsya_berezniki"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_slavsya_berezniki
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+	}
+	country = {
+		MAR_attack_only_aria = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_attack_only_aria"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_baf
+			
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = PRM
+				attack_bonus_against = 0.1
+			}		
+
+		}
+	}
+	country = {
+		MAR_defence_only_aria = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_defence_only_aria"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_baf
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = PRM
+				defense_bonus_against = 0.1
+			}
+		}
+	}
+	country = {
+		MAR_def_and_attack = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_def_and_attack"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_slavsya_berezniki
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = PRM
+				attack_bonus_against = 0.05			
+				defense_bonus_against = 0.05
+			}
+		}
+	}
+	country = {
+		MAR_monah_orden = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_monah_orden"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_Armour_of_God
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+				land_reinforce_rate = 0.015
+				political_power_factor = -0.15
+			}
+		}
+	}	
+
+	security_minister = {
+		MAR_Sergey_Belozerski_sec = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_Sergey_Belozerski_sec"}
+			allowed = {
+				original_tag = MAR
+			}
+			picture = "MAR_minister_Sergey_Belozersky"
+			available = {
+
+			}
+			traits = {
+				despotism
+				hog_respected_war_hero
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+
+	economy_minister = {
+		MAR_Alexey_Kosygin_eco = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_Alexey_Kosygin_eco"}
+			allowed = {
+				original_tag = MAR
+			}
+			picture = "MAR_minister_Alexei_Kosygin"
+			available = {
+			}
+			traits = {
+				despotism
+				eco_administrative_genius
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+
+	head_of_government = {
+		MAR_Alexander_Kazembek_hog = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_Alexander_Kazembek_hog"}
+			allowed = {
+				original_tag = MAR
+			}
+			picture = "MAR_minister_Kazembek"
+			available = {
+				
+			}
+			traits = {
+				despotism
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		MAR_Vladimir_Gil_sec = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_Vladimir_Gil_sec"}
+			allowed = {
+				original_tag = MAR
+			}
+			picture = "MAR_minister_Gil"
+			available = {
+
+			}
+			traits = {
+				despotism
+				hog_respected_war_hero
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}	
+	head_of_government = {
+		MAR_Cyril_Yelita_Vilchkovsky_hog = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_Cyril_Yelita_Vilchkovsky_hog"}
+			allowed = {
+				original_tag = MAR
+			}
+			picture = "MAR_minister_Cyril_Yelita_Vilchkovsky"
+			available = {
+				
+			}
+			traits = {
+				despotism
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	country = {
+		MAR_volunteer_mladojopa = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_volunteer_mladojopa"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MAR_volunteer_mladojopa
+			modifier = {
+				social_democrat_acceptance = 50
+				social_liberal_acceptance = 50
+				authoritarian_democrat_acceptance = 50
+				send_volunteer_size = 3
+				send_volunteers_tension = -0.1
+				send_volunteer_divisions_required = 1
+			}
+		}
+	}										
+	country = {
+		MAR_naykograd = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_naykograd"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_Forced_Syncretism
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+	}
+	country = {
+		MAR_epoxa_prosvet = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_epoxa_prosvet"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_Forced_Syncretism
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+	}
+	country = {
+		MAR_orel_back = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_orel_back"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_Forced_Syncretism
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.20
+				stability_factor = 0.10
+			}
+		}
+	}
+	country = {
+		MAR_burocrat = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_burocrat"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_Forced_Syncretism
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.20
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+	country = {
+		MAR_koleso_delaet = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_koleso_delaet"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_Forced_Syncretism
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.50
+			}
+		}
+	}
+	country = {
+			MAR_kazan_acedemia = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_kazan_acedemia"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NIK_kazan_military_academy
+			modifier = {
+				training_time_factor = -0.1
+				army_org = 10
+				planning_speed = 0.15
+			}
+		}
+	}
+	country = {
+		MAR_strafbat = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_strafbat"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_Forced_Syncretism
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.05
+				conscription_factor = 0.10
+			}
+		}
+	}
+	country = {
+		MAR_defenser_vostok = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAR_defenser_vostok"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				always = yes
+			}
+
+			picture = MAR_Forced_Syncretism
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.30
+				stability_factor = 0.10
+			}
+		}
+	}	
+}	
+#

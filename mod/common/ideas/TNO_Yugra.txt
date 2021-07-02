@@ -1,0 +1,140 @@
+ideas = {
+	country = {
+		KOM_selfmade_men = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOM_selfmade_men"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KOM_self_made_men
+			modifier = {
+				political_power_gain = 0.10
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		KOM_zlatoust_made_government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOM_zlatoust_made_government"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = GFX_idea_URL_children_of_vorkuta
+			modifier = {
+				stability_factor = -0.2 
+				war_support_factor = -0.2
+			}
+		}
+		KOM_siberian_democracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOM_siberian_democracy"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				stability_factor = 0.2 
+				political_power_gain = 0.5 
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		KOM_siberian_faithful = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOM_siberian_faithful"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				army_morale_factor = 0.2 
+				war_support_factor = 0.2 
+				offence = 0.2
+			}
+		}
+		KOM_vorovskoy_zakon_nol = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOM_vorovskoy_zakon_nol"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KOM_vorovskoy_zakon_nol
+			modifier = {
+				political_power_gain = 0.15
+				intelligence_agency_defense = 0.1
+			}
+		}
+		KOM_vorovskoy_zakon_odin = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOM_vorovskoy_zakon_odin"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KOM_self_made_men
+			modifier = {
+				political_power_gain = 0.00
+				intelligence_agency_defense = 0.5
+			}
+		}
+		KOM_vorovskoy_zakon_dva = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOM_vorovskoy_zakon_dva"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KOM_self_made_men
+			modifier = {
+				political_power_gain = -0.15 
+				intelligence_agency_defense = 0.10
+			}
+		}
+		KOM_vorovskoy_zakon_pizdec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOM_vorovskoy_zakon_pizdec"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KOM_self_made_men
+			modifier = {
+				political_power_gain = -0.45 
+				intelligence_agency_defense = -0.10
+			}
+		}
+		KOM_arestanti_edini = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOM_arestanti_edini"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KOM_aue_edino
+			modifier = {
+				conscription_factor	 = 0.10
+			}
+		}
+	}
+} 

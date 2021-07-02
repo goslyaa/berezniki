@@ -1,0 +1,93 @@
+MAR_debug_category = {
+	MAR_load_starting_tree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MAR
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MAR_load_starting_tree"
+			load_focus_tree = {	tree = MAR_start_tree keep_completed = no }
+		}
+	}
+
+	MAR_load_bombing_ot_AB = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MAR
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: MAR_load_bombing_ot_AB"
+			load_focus_tree = {	tree = MAR_bombing_ot_AB keep_completed = no }
+		}
+	}
+
+	MAR_load_voina = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MAR
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: MAR_load_voina"
+			load_focus_tree = {	tree = MAR_voina keep_completed = no }
+		}
+	}
+	
+	MAR_load_Belozerski_tree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MAR
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: MAR_load_voina"
+			load_focus_tree = {	tree = MAR_Belozerski_tree keep_completed = no }
+		}
+	}
+	MAR_load_Belozerski_supertree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MAR
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: MAR_load_voina"
+			load_focus_tree = {	tree = MAR_Super_reg keep_completed = no }
+		}
+	}
+	MAR_load_MAR_Kazembek = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MAR
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: MAR_load_voina"
+			load_focus_tree = {	tree = MAR_Kazembek keep_completed = no }
+		}
+	}			
+}
+
+
+
+

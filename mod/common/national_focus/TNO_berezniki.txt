@@ -1,0 +1,86 @@
+focus_tree = {
+	id = MAR_start_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAR
+		}
+	}
+	default = no
+	shared_focus = MAR_kazembek_begining
+}
+
+focus_tree = {
+	id = MAR_bombing_ot_AB
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAR
+		}
+	}
+	default = no
+	shared_focus = MAR_bombing_zhrebi_broshen
+}
+
+focus_tree = {
+	id = MAR_voina
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAR
+		}
+	}
+	default = no
+	shared_focus = MAR_hope_freedom
+	shared_focus = MAR_pohod_the_end
+}
+
+focus_tree = {
+	id = MAR_Belozerski_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAR
+		}
+	}
+	default = no
+	shared_focus = MAR_pervii_ukaz
+	shared_focus = MAR_reanim_eco
+	shared_focus = MAR_voen_prikaz
+	shared_focus = MAR_posol_prikaz
+}
+
+focus_tree = {
+	id = MAR_Super_reg
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAR
+		}
+	}
+	default = no
+	shared_focus = MAR_vne_sesd
+	shared_focus = RUS_MAR_nukes_into_the_atomic_age
+}
+
+focus_tree = {
+	id = MAR_Kazembek
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAR
+		}
+	}
+	default = no
+	shared_focus = MAR_regents
+	shared_focus = MAR_vsnh
+	shared_focus = MAR_mladoros_army
+	shared_focus = MAR_vihod_zabv
+}
+

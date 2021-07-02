@@ -1,0 +1,33 @@
+leader_traits = {
+
+	char_general = {
+		random = no
+		war_support_factor = 0.1
+		political_power_gain = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	narod_lubimka = {
+		random = no
+		stability_factor = 0.1
+		political_power_gain = -0.2
+
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+
+	char_reformator = {
+		random = no
+		production_factory_max_efficiency_factor = 0.1
+		research_speed_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+	
+}	

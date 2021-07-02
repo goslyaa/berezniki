@@ -1,0 +1,75 @@
+defined_text = {
+	name = MAR_curent_level_of_vyatka_spy
+	text = {
+		trigger = { has_country_flag = Berezniki_globalis_open_door }
+		localization_key = MAR_spy_vyatka_mehanic
+	}
+}
+
+defined_text = {
+	name = MAR_set_pizdec_level
+	text = {
+		trigger = {
+			check_variable = {
+				MAR_berezniki_pizdec = > 74
+			}
+		}
+		localization_key = MAR_all_very_horoshi
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				MAR_berezniki_pizdec = > 50
+				MAR_berezniki_pizdec = < 74
+			}
+		}
+		localization_key = MAR_all_horosho
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				MAR_berezniki_pizdec = 50
+			}
+		}
+		localization_key = MAR_all_just_normal
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				MAR_berezniki_pizdec = < 50
+				MAR_berezniki_pizdec = > 25
+			}
+		}
+		localization_key = MAR_all_bad
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				MAR_berezniki_pizdec = < 25
+			}
+		}
+		localization_key = MAR_all_very_bad
+	}
+}
+
+defined_text = {
+	name = GET_COUNTRY_INFO
+	text = {
+		trigger = { tag = MAR }
+		localization_key = COUNTRY_INFO_BEREZNIKI
+	}
+}
+defined_text = {
+	name = GET_POSTER
+	text = {
+		trigger = { tag = MAR }
+		localization_key = "GFX_TNO_OpeningScreen_Poster_Berezniki"
+	}
+}
+defined_text = {
+	name = GET_CLOSEBUTTON_TEXT
+	text = {
+		trigger = { tag = MAR }
+		localization_key = TNO_OPENING_SCREEN_BUTTON_TEXT_MAR
+	}
+}		

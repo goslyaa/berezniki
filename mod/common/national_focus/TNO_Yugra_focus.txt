@@ -1,0 +1,83 @@
+focus_tree = {
+	id = KOM_Starting
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KOM
+		}
+	}
+	default = no
+	shared_focus = KOM_Land_of_Bratki
+}
+
+focus_tree = {
+	id = KOM_Expansion
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = KOM
+		}
+	}
+	default = no
+	shared_focus = KOM_Suchiy_march
+}
+
+focus_tree = {
+	id = KOM_regional
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = KOM
+		}
+	}
+	default = no
+	shared_focus = KOM_State_council
+	shared_focus = KOM_Great_perelom
+	shared_focus = KOM_army_commisariate
+	shared_focus = KOM_external_pravilovo
+}
+
+focus_tree = {
+	id = KOM_superreg_Jaba
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = KOM
+		}
+	}
+	default = no
+	shared_focus = KOM_Georgian_triumph
+	shared_focus = RUS_RWS_nukes_into_the_atomic_age
+}
+
+focus_tree = {
+	id = KOM_superreg_plot
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = KOM
+		}
+	}
+	default = no
+	shared_focus = KOM_Bratki_plot
+	shared_focus = RUS_RWS_nukes_into_the_atomic_age
+}
+
+focus_tree = {
+	id = KOM_superreg_pseudodemocracy
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = KOM
+		}
+	}
+	default = no
+	shared_focus = KOM_cultural_vory
+	shared_focus = RUS_RWS_nukes_into_the_atomic_age
+}
