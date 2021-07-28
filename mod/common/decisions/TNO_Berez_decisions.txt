@@ -87,7 +87,68 @@ MAR_debug_category = {
 		}
 	}			
 }
-
+MAR_expiriments_category = {
+	MAR_siamese_siblings = {
+		icon = GFX_decision_generic_decision
+		
+		available = {
+			has_country_flag = START_PROJECTS
+			custom_trigger_tooltip = {
+				tooltip = MAR_doing_experiment_tt
+				NOT = {
+					has_country_flag = MAR_doing_experiment
+				}
+			}
+		}
+		
+		visible = {
+			always = yes
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		days_remove = 5
+		
+		custom_cost_trigger = { command_power > 19.99 }
+		custom_cost_text = decision_cost_20_cp
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MAR_siamese_siblings"
+			set_country_flag = MAR_doing_experiment
+			custom_effect_tooltip = MAR_siamese_siblings_cost_tt
+			add_to_variable = { national_debt = 100 }
+		}
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove Decision MAR_siamese_siblings"
+			clr_country_flag = MAR_doing_experiment
+			custom_effect_tooltip = MAR_experiment_results_tt
+			hidden_effect = {
+				random_list = {
+					20 = {
+						country_event = {
+							id = berez.exper.1
+						}
+					}
+					60 = {
+						country_event = {
+							id = berez.exper.2
+						}
+					}
+					20 = {
+						country_event = {
+							id = berez.exper.3
+						}
+					}
+				}
+			}
+		}
+	}				
+}
 
 
 

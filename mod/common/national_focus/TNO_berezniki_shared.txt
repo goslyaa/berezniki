@@ -66,7 +66,7 @@ shared_focus = {
 	completion_reward = {
 		custom_effect_tooltip = MAR_hes_future_no_vyatka
 		hidden_effect = { 
-			country_event = { id = berez_eco.3 days = 10 }
+			country_event = { id = berez_eco.3 days = 00 }
 		}
 	}
 }
@@ -108,7 +108,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	completion_reward = {
-	country_event = { id = berez_eco.5 days = 1 }
+	country_event = { id = berez_eco.5 days = 0 }
 	add_political_power = -30
 	add_manpower = -500
 	add_resource = {
@@ -224,7 +224,7 @@ shared_focus = {
 	x = 9
 	y = 6
 	completion_reward = {
-		country_event = { id = berez_eco.20 days = 1 }
+		country_event = { id = berez_eco.20 days = 0 }
 	}
 }
 
@@ -403,7 +403,7 @@ shared_focus = {
 	x = 14
 	y = 6
 	completion_reward = {
-		country_event = { id = berez_eco.27 days = 1 }
+		country_event = { id = berez_eco.27 days = 0 }
 		add_ideas = {
 			MAR_komissars_in_army
 		}
@@ -424,8 +424,8 @@ shared_focus = {
 	x = 14
 	y = 7
 	completion_reward = {
-		country_event = { id = berez_eco.28 days = 1 }
-		experience_gain_army_factor = 5
+		country_event = { id = berez_eco.28 days = 0 }
+		army_experience = 5
 		add_tech_bonus = {
 			bonus = 1.0
 			uses = 1
@@ -488,7 +488,7 @@ shared_focus = {
 	x = 18
 	y = 6
 	completion_reward = {
-		country_event = { id = berez_eco.31 days = 10 }
+		country_event = { id = berez_eco.31 days = 0 }
 	}
 }
 
@@ -506,7 +506,7 @@ shared_focus = {
 	x = 18
 	y = 7
 	completion_reward = {
-		country_event = { id = berez_eco.32 days = 1 }
+		country_event = { id = berez_eco.32 days = 0 }
 		add_tech_bonus = {
 			bonus = 0.5
 			uses = 2
@@ -634,7 +634,7 @@ shared_focus = {
 	x = 0
 	y = 8
 	completion_reward = {
-			country_event = { id = berez_eco.16 days = 1 }
+			country_event = { id = berez_eco.16 days = 0 }
 		
 	}
 }
@@ -717,7 +717,7 @@ shared_focus = {
 #		hidden_effect = {
 #			country_event = { id = berez_eco.36 days = 2 }
 #		}	
-		country_event = { id = berez_eco.35 days = 10 }
+		country_event = { id = berez_eco.35 days = 00 }
 		KIR = {
 			end_puppet = MAR
 		}
@@ -736,7 +736,7 @@ shared_focus = {
 	y = 0
 	completion_reward = {
 		hidden_effect = {
-			country_event = { id = berez_news.7 days = 100 }
+			country_event = { id = berez_news.7 days = 000 }
 		}	
 		country_event = { id = berez_bomb.1 days = 0 }
 	}
@@ -1023,10 +1023,14 @@ shared_focus = {
 	}
 	bypass = {
 		hidden_trigger = {
-			OR = {
-				has_war_with = GAY
-	    		NOT = { country_exists = GAY }
-    		}	
+	    	NOT = {
+				OR = {
+					country_exists = GAY
+					MAR = {
+						controls_state = 866
+					}
+				}
+			}
 		}
 	}	
 	x = 7
@@ -1116,7 +1120,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_strateg_hueta
-	icon = GFX_MAR_Voina_8
+	icon = GFX_MAR_Strategic_base
 	cost = 2
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1137,7 +1141,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_pismo_sovesti
-	icon = GFX_MAR_Voina_9
+	icon = GFX_MAR_letter_of_will
 	cost = 2
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1164,7 +1168,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_vzatie_kazani
-	icon = GFX_MAR_Voina_11
+	icon = GFX_MAR_Retake_of_Kazan
 	cost = 2
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1193,7 +1197,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_automy_veri
-	icon = GFX_MAR_Voina_10
+	icon = GFX_MAR_Autonomous_Faith
 	cost = 1
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1218,7 +1222,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_new_admin_kazan
-	icon = GFX_MAR_Voina_12
+	icon = GFX_MAR_new_managers
 	cost = 1
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1245,7 +1249,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_tank_zjemchug_zapada
-	icon = GFX_MAR_Voina_13
+	icon = GFX_MAR_Tank_miracle
 	cost = 2
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1278,7 +1282,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_tankov_brigadi
-	icon = GFX_MAR_Voina_14
+	icon = GFX_MAR_Tankist_Brigade
 	cost = 1
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1302,7 +1306,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_nem_marionetki
-	icon = GFX_MAR_Voina_15
+	icon = GFX_MAR_German_Lapdog
 	cost = 2
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1335,7 +1339,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_tribunal_sam
-	icon = GFX_MAR_Voina_16
+	icon = GFX_MAR_Judge_Traitors
 	cost = 1
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1359,7 +1363,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_spokoistvie_uga
-	icon = GFX_MAR_Voina_17
+	icon = GFX_MAR_save_the_south
 	cost = 2
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1389,7 +1393,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_sever_sosat
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_northern
 	cost = 2
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1407,7 +1411,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_sladenikoe_predloj
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_Cool_Offer_Bob
 	cost = 2
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1415,6 +1419,14 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = MAR_sever_sosat
+	}
+	bypass = {
+		hidden_trigger = {
+			OR = {
+				has_war_with = VOL
+	    		NOT = { country_exists = VOL }
+	    	}	
+		}
 	}
 	completion_reward = {	
 		country_event = { id = berez_voina.22 days = 0 }
@@ -1425,7 +1437,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_close_jopa
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_Border_1
 	cost = 1
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1449,18 +1461,26 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_prizma_jopi
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_Democratic_prism
 	cost = 2
 	available_if_capitulated = no
+	bypass = {
+		hidden_trigger = {
+			OR = {
+				has_war_with = NIK
+	    		NOT = { country_exists = NIK }
+	    	}	
+		}
+	}
 	ai_will_do = {
 		factor = 1
 	}
 	available = {
 		NIK = {	
 			OR = {
-				has_government = { authoritarian_democrat }
-				has_government = { social_democrat }
-				has_government = { social_liberal }
+				has_government = authoritarian_democrat
+				has_government = social_democrat
+				has_government = social_liberal
 			}	
 		}
 	}
@@ -1479,7 +1499,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_verbovka
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_Allign_burocrats
 	cost = 1
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1503,19 +1523,27 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_radical_rep
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_Radical_Republic
 	cost = 2
 	available_if_capitulated = no
 	ai_will_do = {
 		factor = 1
 	}
+	bypass = {
+		hidden_trigger = {
+			OR = {
+				has_war_with = NIK
+	    		NOT = { country_exists = NIK }
+	    	}	
+		}
+	}
 	available = {
 		NIK = {
 			NOT = {
 				OR = {
-					has_government = { authoritarian_democrat }
-					has_government = { social_democrat }
-					has_government = { social_liberal }
+					has_government = authoritarian_democrat
+					has_government = social_democrat
+					has_government = social_liberal
 				}
 			}		
 		}
@@ -1535,7 +1563,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_help_utopauhix
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_saving_forgotten
 	cost = 1
 	available_if_capitulated = no
 	ai_will_do = {
@@ -1555,7 +1583,7 @@ shared_focus = {
 	completion_reward = {	
 		country_event = { id = berez_voina.35 days = 0 }
 		hidden_effect = {
-			country_event = { id = berez_voina.36 days = 15}
+			country_event = { id = berez_voina.36 days = 05}
 			country_event = { id = berez_voina.37 days = 30}
 		}
 	}
@@ -1634,8 +1662,8 @@ shared_focus = {
 	x = 7
 	y = 15
 	completion_reward = {
-			custom_effect_tooltip = MAR_New_Future_tt 
-			hidden_effect = {
+		custom_effect_tooltip = MAR_New_Future_tt 
+		hidden_effect = {
 			if = {
 				limit = { has_government = despotism }
 				country_event = {
@@ -1644,28 +1672,24 @@ shared_focus = {
 				}
 			}
 			else_if = {
-				limit = { has_goverment = authoritarian_democrat }
+				limit = { has_goverment = authoritarian_democrat }	
 				country_event = {
 					id = berez_voina.41
 					days = 0
 				}
-			}
-				else_if = {
+			}	
+			else_if = {
 				limit = { has_goverment = socialist }
 				country_event = {
 					id = berez_voina.42
 					days = 0
 				}
 			}
-			else {
-		
-			}
-			
+		}
+	}	
+}	
 	
 	
-}
-}
-}
 
  ################################### election tree
 
@@ -1793,7 +1817,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_blagoslov_predkov
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_Our_Ancestors
 	cost = 3
 	prerequisite = {
 		focus = MAR_char_general
@@ -1807,7 +1831,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_Svayzi_proshlogo
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_Past_Connections
 	cost = 3
 	prerequisite = {
 		focus = MAR_char_general
@@ -1822,7 +1846,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_Char_army
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_Tsarist_Army
 	cost = 3
 	prerequisite = {
 		focus = MAR_blagoslov_predkov
@@ -1858,7 +1882,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_opati_sladkoe_predlojenie
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_An_offer
 	cost = 3
 	prerequisite = {
 		focus = MAR_Char_ot_naroda
@@ -1872,7 +1896,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_everyman_char
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_as_Tsar
 	cost = 3
 	prerequisite = {
 		focus = MAR_Char_ot_naroda
@@ -1888,7 +1912,7 @@ shared_focus = {
 
 shared_focus = {
 	id = MAR_technocraty
-	icon = GFX_goal_unknown
+	icon = GFX_MAR_Technologies_of_the_future
 	cost = 3
 	prerequisite = {
 		focus = MAR_opati_sladkoe_predlojenie
@@ -1935,7 +1959,7 @@ shared_focus = {
 	x = 23
 	y = 10
 	completion_reward = {
-		custom_effect_tooltip = MAR_army_upgrade
+		custom_effect_tooltip = MAR_tt_The_moment_of_Truth
 		hidden_effect = {
 			if = {
 				limit = { has_completed_focus = MAR_char_general }
@@ -1973,7 +1997,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_pervii_ukaz
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	x = 9
 	y = 0
 	completion_reward = {
@@ -1983,7 +2007,7 @@ shared_focus = {
 		}
 		country_event = {
 			id = berez_belozerski.1
-			days = 1 
+			days = 0 
 		}
 	}	
 }
@@ -1991,7 +2015,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_integratia_chinov
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_pervii_ukaz
 	}
@@ -2005,7 +2029,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_svoboda_vibora
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_pervii_ukaz
 	}
@@ -2018,7 +2042,7 @@ shared_focus = {
 		}
 		country_event = {
 			id = berez_belozerski.2
-			days = 1 
+			days = 0 
 		}
 	}			
 }
@@ -2026,7 +2050,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_novia_soveti
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_integratia_chinov
 	}
@@ -2042,15 +2066,15 @@ shared_focus = {
 		}
 		country_event = {
 			id = berez_belozerski.3
-			days = 1 
+			days = 0 
 		}
-	}		
+	}	
 }
 
 shared_focus = {
 	id = MAR_graniti_gubernii
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_novia_soveti
 	}
@@ -2058,13 +2082,13 @@ shared_focus = {
 	y = 3
 	completion_reward = {
 		RUS_decrease_administrative_strain = yes
-	}	
+	}
 }
 
 shared_focus = {
 	id = MAR_cherkovni_vopros
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_graniti_gubernii
 	}
@@ -2073,16 +2097,16 @@ shared_focus = {
 	completion_reward = {
 		country_event = {
 			id = berez_belozerski.5
-			days = 1 
+			days = 0 
 		}
 		RUS_decrease_administrative_strain = yes
-	}	
+	}
 }
 
 shared_focus = {
 	id = MAR_kozli_opuhenia
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_novia_soveti
 	}
@@ -2101,7 +2125,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_vspomnit_uspeh
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_kozli_opuhenia
 	}
@@ -2110,7 +2134,7 @@ shared_focus = {
 	completion_reward = {
 		country_event = {
 			id = berez_belozerski.7
-			days = 1
+			days = 0
 		}
 		add_war_support = 0.05
 	}	
@@ -2119,7 +2143,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_uroki_zubatova
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_vspomnit_uspeh
 	}
@@ -2132,7 +2156,7 @@ shared_focus = {
 		}	
 		country_event = {
 			id = berez_belozerski.8
-			days = 1 
+			days = 0 
 		}
 	}		
 }		
@@ -2140,7 +2164,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_uchrejdenie_prikazov
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_novia_soveti
 	}
@@ -2151,7 +2175,7 @@ shared_focus = {
 		RUS_decrease_administrative_strain = yes
 		country_event = {
 			id = berez_belozerski.4
-			days = 1 
+			days = 0 
 		}
 	}
 }
@@ -2159,7 +2183,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_zem_reforma
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_uchrejdenie_prikazov
 	}
@@ -2174,7 +2198,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_podgotovka_konsti
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_uchrejdenie_prikazov
 	}
@@ -2188,7 +2212,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_novie_partiici
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_zem_reforma
 	}
@@ -2209,7 +2233,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_pervi_siezd
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_novie_partiici
 	}
@@ -2224,12 +2248,12 @@ shared_focus = {
 	completion_reward = {
 		RUS_decrease_administrative_strain = yes
 		set_country_flag = RUS_REGIONAL_POLITICAL_TREE_DONE
-			country_event = {
-				id = berez_belozerski.9
-				days = 1 
-			}	
+		country_event = {
+			id = berez_belozerski.9
+			days = 0 
 		}
 		custom_effect_tooltip = RUS_unlock_race_to_urals_tt
+	}
 }
 #####################################################
 
@@ -2238,7 +2262,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_reanim_eco
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	x = 25
 	y = 0
 	available = {
@@ -2252,14 +2276,14 @@ shared_focus = {
 		}
 		country_event = { 
 			id = berez_belozerski.15
-			days = 1
+			days = 0
 		}
 	}	
 }
 shared_focus = {
 		id = MAR_vost_nayki
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_reanim_eco
 		}
@@ -2274,7 +2298,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_razvi_otrasle
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_vost_nayki
 		}
@@ -2291,7 +2315,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_sistema_obr
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_vost_nayki
 		}
@@ -2300,7 +2324,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.16
-			days = 1
+			days = 0
 		}
 		TNO_education_improve = yes	
 	}
@@ -2308,7 +2332,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_naykogradi
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_razvi_otrasle
 		}
@@ -2320,7 +2344,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.17
-			days = 1
+			days = 0
 		}	
 		add_to_variable = { national_debt = 700 }
 		add_ideas = { MAR_naykograd }
@@ -2329,7 +2353,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_econom_prikaz
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_reanim_eco
 		}
@@ -2338,7 +2362,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.18
-			days = 1
+			days = 0
 		}	
 		add_political_power = 50
 		add_to_variable = { GDP_growth = 0.02 }
@@ -2347,7 +2371,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_dveri
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_econom_prikaz
 		}
@@ -2364,7 +2388,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_priv_invest
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_dveri
 		}
@@ -2373,7 +2397,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.19
-			days = 1
+			days = 0
 		}	
 		random_owned_state = {
 			add_extra_state_shared_building_slots = 4
@@ -2389,7 +2413,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_mts
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_dveri
 		}
@@ -2403,7 +2427,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_mali_biznes
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_mts
 		}
@@ -2417,7 +2441,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_taz_prom
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_dveri
 		}
@@ -2439,7 +2463,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_stroim_infry
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_taz_prom
 		}
@@ -2448,7 +2472,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.20
-			days = 1
+			days = 0
 		}	
 		random_owned_state = {
 			add_extra_state_shared_building_slots = 2
@@ -2487,7 +2511,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_prom_centr
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_stroim_infry
 		}
@@ -2496,7 +2520,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.21
-			days = 1
+			days = 0
 		}
 		random_owned_state = {
 			add_extra_state_shared_building_slots = 3
@@ -2520,7 +2544,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_ih_znania
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_priv_invest
 		}
@@ -2529,7 +2553,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.22
-			days = 1
+			days = 0
 		}
 		TNO_improve_industrial_equipment_low = yes
 		TNO_improve_industrial_expertise_med = yes		
@@ -2538,7 +2562,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_stab_rubl
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_ih_znania
 		}
@@ -2556,7 +2580,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_epoxa_prosveta
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_stab_rubl
 		}
@@ -2568,7 +2592,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.23
-			days = 1
+			days = 0
 		}
 		add_ideas = { MAR_epoxa_prosvet }
 	}
@@ -2577,13 +2601,13 @@ shared_focus = {
 shared_focus = {
 	id = MAR_posol_prikaz
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	x = 50
 	y = 0
 	completion_reward = {
 		country_event = { 
 			id = berez_belozerski.10 
-			days = 1 
+			days = 0 
 		}
 		add_political_power = 50
 	}	
@@ -2592,7 +2616,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_torgovie_anali
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_posol_prikaz
 	}
@@ -2621,7 +2645,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_vstrecha_dvuh_orlov
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_torgovie_anali
 	}
@@ -2641,7 +2665,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_podrjka_ofn
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_vstrecha_dvuh_orlov
 	}
@@ -2659,7 +2683,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_russkie_dobrovolchi
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_torgovie_anali
 	}
@@ -2677,14 +2701,14 @@ shared_focus = {
 shared_focus = {
 	id = MAR_proniknovenie_vtil
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_russkie_dobrovolchi
 	}
 	x = 54
 	y = 3
 	completion_reward = {
-		country_event = { id = berez_belozerski.32 days = 1 }
+		country_event = { id = berez_belozerski.32 days = 0 }
 		start_border_war = {
 		    change_state_after_war = no
 		    attacker = {
@@ -2709,7 +2733,7 @@ shared_focus = {
 shared_focus = {
 	id = MAR_anti_nemec
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_podrjka_ofn
 	}
@@ -2719,13 +2743,13 @@ shared_focus = {
 	x = 50
 	y = 4
 	completion_reward = {
-		country_event = { id = berez_belozerski.30 days = 1 }
+		country_event = { id = berez_belozerski.30 days = 0 }
 	}	
 }
 shared_focus = {
-	id = MAR_orel_back
+	id = MAR_orel_backs
 	icon = GFX_goal_unknown
-	cost = 3,58
+	cost = 3.58
 	prerequisite = {
 		focus = MAR_anti_nemec
 	}
@@ -2733,7 +2757,7 @@ shared_focus = {
 	y = 5
 	completion_reward = {
 		add_ideas = { MAR_orel_back }
-		country_event = { id = berez_belozerski.31 days = 1 }
+		country_event = { id = berez_belozerski.31 days = 0 }
 	}
 }
 #############################################################
@@ -2741,21 +2765,21 @@ shared_focus = {
 shared_focus = {
 		id = MAR_voen_prikaz
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		x = 38
 		y = 0
 		completion_reward = {
 		army_experience = 25	
 		country_event = { 
 			id = berez_belozerski.24
-			days = 1
+			days = 0
 		}		
 	}
 }	
 shared_focus = {
 		id = MAR_exper_KB
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_voen_prikaz
 		}
@@ -2764,14 +2788,15 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.25
-			days = 1
+			days = 0
 		}
+		set_country_flag = START_PROJECTS
 	}
 }	
 shared_focus = {
 		id = MAR_sovr_voina
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_exper_KB
 		}
@@ -2789,7 +2814,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_tank_pred
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_sovr_voina
 		}
@@ -2806,7 +2831,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_razv_tren
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_voen_prikaz
 		}
@@ -2815,7 +2840,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.26
-			days = 1
+			days = 0
 		}		
 		tno_training_improve = yes
 	}
@@ -2823,7 +2848,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_rus_avia
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_razv_tren
 		}
@@ -2841,7 +2866,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_standart_oryg
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_voen_prikaz
 		}
@@ -2858,7 +2883,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_tsar_gvardia
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_standart_oryg
 		}
@@ -2872,7 +2897,7 @@ shared_focus = {
 		}
 		country_event = { 
 			id = berez_belozerski.27
-			days = 1
+			days = 0
 		}
 		TNO_improve_army_professionalism_med = yes
 	}
@@ -2880,7 +2905,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_yroki_urala
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_tsar_gvardia
 		}
@@ -2889,7 +2914,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.27
-			days = 1
+			days = 0
 		}
 		tno_training_improve = yes
 	}
@@ -2897,7 +2922,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_rus_ybersoldat
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_tank_pred
 		}
@@ -2910,7 +2935,7 @@ shared_focus = {
 		add_war_support = 0.10
 		country_event = { 
 			id = berez_belozerski.28
-			days = 1
+			days = 0
 		}
 		TNO_improve_army_professionalism_high = yes
 	}
@@ -2922,21 +2947,21 @@ shared_focus = {
 shared_focus = {
 		id = MAR_vne_sesd
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		x = 8
 		y = 1
 		completion_reward = {
 		add_political_power = 50
 		country_event = { 
 			id = berez_belozerski.33
-			days = 1
+			days = 0
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_sibir_prostor
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_vne_sesd
 		}
@@ -2947,27 +2972,27 @@ shared_focus = {
 	}
 }	
 shared_focus = {
-		id = MAR_omsk_problem
-		icon = GFX_goal_unknown
-		cost = 3,00
-		prerequisite = {
-			focus = MAR_sibir_prostor
-		}
-		x = 3
-		y = 3
-		completion_reward = {
+	id = MAR_omsk_problem
+	icon = GFX_goal_unknown
+	cost = 3.00
+	prerequisite = {
+		focus = MAR_sibir_prostor
+	}
+	x = 3
+	y = 3
+	completion_reward = {
 		RUS_integration_cost_days_decrease = yes
 		add_stability = 0.05
 		country_event = { 
 			id = berez_belozerski.34
-			days = 1
+			days = 0
 		}
 	}
-}	
+}
 shared_focus = {
 		id = MAR_integration_armii
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_sibir_prostor
 		}
@@ -2980,7 +3005,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_chelover
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_omsk_problem
 		}
@@ -2993,14 +3018,14 @@ shared_focus = {
 		add_political_power = 25
 		country_event = { 
 			id = berez_belozerski.35
-			days = 1
+			days = 0
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_dragynov
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_vne_sesd
 		}
@@ -3014,14 +3039,14 @@ shared_focus = {
 		}
 		country_event = { 
 			id = berez_belozerski.36
-			days = 1
+			days = 0
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_bogatsvo_zlatoysta
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_vne_sesd
 		}
@@ -3045,7 +3070,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_poezdka_amerika
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_dragynov
 		}
@@ -3062,14 +3087,14 @@ shared_focus = {
         }
 		country_event = { 
 			id = berez_belozerski.37
-			days = 1
+			days = 0
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_zapolare
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_vne_sesd
 		}
@@ -3131,7 +3156,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_resyrsi
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_zapolare
 		}
@@ -3156,7 +3181,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_edinaa_rus
 		icon = GFX_goal_unknown
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = MAR_chelover
 		}
@@ -3168,7 +3193,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_belozerski.38
-			days = 1
+			days = 0
 		}
 	}
 }
@@ -3386,21 +3411,21 @@ shared_focus = {
 shared_focus = {
 		id = MAR_regents
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		x = 6
 		y = 0
 		completion_reward = {
 		add_political_power = 50
 		country_event = { 
 			id = berez_kazembek.1
-			days = 1
+			days = 0
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_golden
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_regents
 		}
@@ -3410,14 +3435,14 @@ shared_focus = {
 		add_stability = 0.05
 		country_event = { 
 			id = berez_kazembek.2
-			days = 1
+			days = 0
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_sistem_sovet
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_regents
 		}
@@ -3434,7 +3459,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_part_zont
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_golden
 		}
@@ -3451,14 +3476,14 @@ shared_focus = {
 		}
 		country_event = {
 			id = berez_kazembek.3
-			days = 1 
+			days = 0 
 		}
 	}
 }
 shared_focus = {
 		id = MAR_old_opyx
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_part_zont
 		}
@@ -3468,7 +3493,7 @@ shared_focus = {
 		RUS_decrease_administrative_strain = yes
 		country_event = {
 			id = berez_kazembek.4
-			days = 1 
+			days = 0 
 		}
 		add_popularity = {
 			ideology = fascism
@@ -3483,7 +3508,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_svoboda_sovesti
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_old_opyx
 		}
@@ -3499,7 +3524,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_burocrat
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_svoboda_sovesti
 		}
@@ -3508,7 +3533,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = {
 			id = berez_kazembek.5
-			days = 1 
+			days = 0 
 		}
 		add_ideas = { MAR_burocrat }
 	}
@@ -3516,7 +3541,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_renesans
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_part_zont
 		}
@@ -3526,14 +3551,14 @@ shared_focus = {
 		add_political_power = 25
 		country_event = {
 			id = berez_kazembek.6
-			days = 1 
+			days = 0 
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_soyz_narodov
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_renesans
 		}
@@ -3549,7 +3574,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_party_znaet
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_part_zont
 		}
@@ -3565,7 +3590,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_part_dochki
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_party_znaet
 		}
@@ -3577,14 +3602,14 @@ shared_focus = {
 		add_stability = 0.10
 		country_event = {
 			id = berez_kazembek.7
-			days = 1 
+			days = 0 
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_prav_mish
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_part_dochki
 		}
@@ -3594,14 +3619,14 @@ shared_focus = {
 		add_war_support = 0.05
 		country_event = {
 			id = berez_kazembek.8
-			days = 1 
+			days = 0 
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_regent_sesd
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_burocrat
 		}
@@ -3617,7 +3642,7 @@ shared_focus = {
 		custom_effect_tooltip = RUS_unlock_race_to_urals_tt
 		country_event = {
 			id = berez_kazembek.9
-			days = 1 
+			days = 0 
 		}
 	}
 }	
@@ -3627,13 +3652,13 @@ shared_focus = {
 shared_focus = {
 		id = MAR_vsnh
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		x = 19
 		y = 0
 		completion_reward = {
 		country_event = {
 			id = berez_kazembek.10
-			days = 1 
+			days = 0 
 		}
 		add_to_variable = { GDP_growth = 0.02 }
 	}
@@ -3641,7 +3666,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_pritovopolosh
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_vsnh
 		}
@@ -3655,7 +3680,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_russan_krest
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_pritovopolosh
 		}
@@ -3666,14 +3691,14 @@ shared_focus = {
 		add_to_variable = { national_debt = 500 }
 		country_event = {
 			id = berez_kazembek.11
-			days = 1 
+			days = 0 
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_hleb_sol
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_russan_krest
 		}
@@ -3684,14 +3709,14 @@ shared_focus = {
 		add_to_variable = { national_debt = 500 }
 		country_event = {
 			id = berez_kazembek.12
-			days = 1 
+			days = 0 
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_gos_plan
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_pritovopolosh
 		}
@@ -3729,7 +3754,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_Soveti
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_pritovopolosh
 		}
@@ -3739,14 +3764,14 @@ shared_focus = {
 		add_to_variable = { GDP_growth = 0.02 }
 		country_event = {
 			id = berez_kazembek.13
-			days = 1 
+			days = 0 
 		}
 	}
 }
 shared_focus = {
 		id = MAR_control_chasnik
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_Soveti
 		}
@@ -3757,14 +3782,14 @@ shared_focus = {
 		TNO_improve_poverty_med = yes
 		country_event = {
 			id = berez_kazembek.14
-			days = 1 
+			days = 0 
 		}
 	}
 }
 shared_focus = {
 		id = MAR_koleso_delaet
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_indastrial_smert
 		}
@@ -3776,18 +3801,18 @@ shared_focus = {
 		completion_reward = {
 		add_timed_idea = {
 			idea = MAR_koleso_delaet
-			days = 1050
+			days = 0050
 		}
 		country_event = {
 			id = berez_kazembek.15
-			days = 1 
+			days = 0 
 		}		
 	}
 }
 shared_focus = {
 		id = MAR_likbes
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_vsnh
 		}
@@ -3801,7 +3826,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_ydochka
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_vsnh
 		}
@@ -3829,7 +3854,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_jyngle
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_likbes
 		}
@@ -3843,7 +3868,7 @@ shared_focus = {
 		add_to_variable = { national_debt = 400 }
 		country_event = {
 			id = berez_kazembek.16
-			days = 1 
+			days = 0 
 		}		
 	}
 }	
@@ -3853,21 +3878,21 @@ shared_focus = {
 shared_focus = {
 		id = MAR_mladoros_army
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		x = 33
 		y = 0
 		completion_reward = {
 		army_experience = 25
 		country_event = {
 			id = berez_kazembek.17
-			days = 1 
+			days = 0 
 		}		
 	}
 }
 shared_focus = {
 		id = MAR_reorg_flot
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_mladoros_army
 		}
@@ -3884,7 +3909,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_aviaprom
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_reorg_flot
 		}
@@ -3901,7 +3926,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_opit_zavoe
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_mladoros_army
 		}
@@ -3919,7 +3944,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_kazan_acedemia
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_opit_zavoe
 		}
@@ -3932,7 +3957,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_voorushenit
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_kazan_acedemia
 		}
@@ -3949,7 +3974,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_tank_kb
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_mladoros_army
 		}
@@ -3958,7 +3983,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = {
 			id = berez_kazembek.18
-			days = 1 
+			days = 0 
 		}		
 		add_tech_bonus = {
 			bonus = 1
@@ -3970,7 +3995,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_til_obeshecnie
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_tank_kb
 		}
@@ -3979,7 +4004,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = {
 			id = berez_kazembek.19
-			days = 1 
+			days = 0 
 		}
 		add_tech_bonus = {
 			bonus = 1
@@ -3991,7 +4016,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_strafbat
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_til_obeshecnie
 		}
@@ -4000,7 +4025,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = {
 			id = berez_kazembek.20
-			days = 1 
+			days = 0 
 		}
 		add_ideas = MAR_strafbat	
 	}
@@ -4008,7 +4033,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_net_predely
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_voorushenit
 		}
@@ -4020,7 +4045,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_kazembek.21
-			days = 1
+			days = 0
 		}
 		TNO_improve_army_professionalism_med = yes
 		tno_training_improve = yes
@@ -4032,21 +4057,21 @@ shared_focus = {
 shared_focus = {
 		id = MAR_vihod_zabv
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		x = 43
 		y = 0
 		completion_reward = {
 		add_political_power = 50
 		country_event = { 
 			id = berez_kazembek.22
-			days = 1
+			days = 0
 		}
 	}
 }
 shared_focus = {
 		id = MAR_kazachki
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_vihod_zabv
 		}
@@ -4055,14 +4080,14 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_kazembek.24
-			days = 1
+			days = 0
 		}
 	}
 }
 shared_focus = {
 		id = MAR_filofos_paroxod
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_vihod_zabv
 		}
@@ -4071,7 +4096,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_kazembek.23
-			days = 1
+			days = 0
 		}
 		TNO_improve_academic_base_med = yes
 		TNO_improve_research_facilities_med = yes
@@ -4080,7 +4105,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_predstavitel_ofn
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_filofos_paroxod
 		}
@@ -4093,7 +4118,7 @@ shared_focus = {
 		}
 		country_event = { 
 			id = berez_kazembek.25
-			days = 1
+			days = 0
 		}
 		add_to_variable = { GDP_growth = 0.03 }
 	}
@@ -4101,7 +4126,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_Skandinavia
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_vihod_zabv
 		}
@@ -4122,7 +4147,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_parnte_jup
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_Skandinavia
 		}
@@ -4131,7 +4156,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_kazembek.26
-			days = 1
+			days = 0
 		}
 		add_opinion_modifier = {
 		    target = JAP
@@ -4143,7 +4168,7 @@ shared_focus = {
 shared_focus = {
 		id = MAR_mnogovektor
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_predstavitel_ofn
 		}
@@ -4156,14 +4181,14 @@ shared_focus = {
 		add_political_power = 100
 		country_event = { 
 			id = berez_kazembek.27
-			days = 1
+			days = 0
 		}
 	}
 }	
 shared_focus = {
 		id = MAR_Vyatka_conference
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = MAR_mnogovektor
 		}
@@ -4172,7 +4197,7 @@ shared_focus = {
 		completion_reward = {
 		country_event = { 
 			id = berez_kazembek.28
-			days = 1
+			days = 0
 		}
 		add_ideas = { MAR_defenser_vostok }
 	}

@@ -1,0 +1,418 @@
+spriteTypes = {
+	###Berezniki###
+	SpriteType = {
+		name = "GFX_MAR_Kazem_Begining_Berezniki"
+		texturefile = "gfx/interface/goals/MAR_Kazembek_begin2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Posilka_Is_Vyatki"
+		texturefile = "gfx/interface/goals/MAR_Package_Vyatka.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Nashe_Budushee"
+		texturefile = "gfx/interface/goals/MAR_Kazembek_plan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Two_Storoni"
+		texturefile = "gfx/interface/goals/MAR_Two_sides.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Beloozero_Rurika"
+		texturefile = "gfx/interface/goals/MAR_Beloozero.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Tsarist_Doch"
+		texturefile = "gfx/interface/goals/MAR_Tsars_dauther2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Weird_Novost"
+		texturefile = "gfx/interface/goals/MAR_Whispers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Shlezhka_Za"
+		texturefile = "gfx/interface/goals/MAR_Search1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Linia_Ot_Ab"
+		texturefile = "gfx/interface/goals/MAR_Line_of_salvation2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Stranni_Razgovor"
+		texturefile = "gfx/interface/goals/MAR_Real_talk.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Chistoe_Nebo"
+		texturefile = "gfx/interface/goals/MAR_Clear_sky.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Opit_Rodini"
+		texturefile = "gfx/interface/goals/MAR_Experience_from_both_sides11.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Spasibo_Sha"
+		texturefile = "gfx/interface/goals/MAR_Gum_help1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Cia_Frients"
+		texturefile = "gfx/interface/goals/MAR_friends_in_CIA1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Tsar_Comissars"
+		texturefile = "gfx/interface/goals/MAR_Comissars1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Cockzaki"
+		texturefile = "gfx/interface/goals/MAR_Kazaki1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Genetalii_Udachi"
+		texturefile = "gfx/interface/goals/MAR_Mercs_new1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Novya_Armia"
+		texturefile = "gfx/interface/goals/MAR_New_army1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Red_Veterans"
+		texturefile = "gfx/interface/goals/MAR_ZVRF1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Isskusto_Voini"
+		texturefile = "gfx/interface/goals/MAR_Art_of_war1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Prozvetanie"
+		texturefile = "gfx/interface/goals/MAR_Prosperity1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Krovui_And"
+		texturefile = "gfx/interface/goals/MAR_With_blood1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_And_Potom"
+		texturefile = "gfx/interface/goals/MAR_And_tears31.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Nam_Eto_Nuzhnee"
+		texturefile = "gfx/interface/goals/MAR_We_need_it_more1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Odobrenie_Ot_Naroda"
+		texturefile = "gfx/interface/goals/MAR_Benelovence1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Pravo_Na_Live"
+		texturefile = "gfx/interface/goals/MAR_Right_to_live1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Row_Wtih_Man"
+		texturefile = "gfx/interface/goals/MAR_at_one_line.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Slava_Proletariatu"
+		texturefile = "gfx/interface/goals/MAR_We_and_proletariat1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Novoe_Oborudovanie"
+		texturefile = "gfx/interface/goals/MAR_New_equipment1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Slave_Factory"
+		texturefile = "gfx/interface/goals/MAR_Rabfacks1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Vsvetloe_Budushee"
+		texturefile = "gfx/interface/goals/MAR_Into_the_future.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAR_Speznax_Porusski"
+		texturefile = "gfx/interface/goals/MAR_Speznaz.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_zhrebi_broshen"
+		texturefile = "gfx/interface/goals/MAR_zhrebi_broshen.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Venesti_zavod"
+		texturefile = "gfx/interface/goals/MAR_Venesti_zavod.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_voodushivit_rabochih"
+		texturefile = "gfx/interface/goals/MAR_rabochie.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_berezpower"
+		texturefile = "gfx/interface/goals/MAR_vse_dla_bereznikov.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Stabilnos_partit"
+		texturefile = "gfx/interface/goals/MAR_Stabilnos_partit.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_peshki"
+		texturefile = "gfx/interface/goals/MAR_peshki.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Berez_novie_lica"
+		texturefile = "gfx/interface/goals/MAR_Berez_novie_lica.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_mass_trenning"
+		texturefile = "gfx/interface/goals/MAR_mass_trenning.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Vse_Vverh_Dnom"
+		texturefile = "gfx/interface/goals/MAR_cammikadze_d.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Za_Stalina"
+		texturefile = "gfx/interface/goals/MAR_zarus_usrus.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_The_end_no"
+		texturefile = "gfx/interface/goals/MAR_vrema_nashe.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_1"
+		texturefile = "gfx/interface/goals/MAR_Voina_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_2"
+		texturefile = "gfx/interface/goals/MAR_Voina_2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Voina_3"
+		texturefile = "gfx/interface/goals/MAR_Voina_3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Voina_4"
+		texturefile = "gfx/interface/goals/MAR_Voina_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_5"
+		texturefile = "gfx/interface/goals/MAR_Voina_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_6"
+		texturefile = "gfx/interface/goals/MAR_Voina_6.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Voina_7"
+		texturefile = "gfx/interface/goals/MAR_Voina_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_8"
+		texturefile = "gfx/interface/goals/MAR_Voina_8.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_9"
+		texturefile = "gfx/interface/goals/MAR_Voina_9.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_10"
+		texturefile = "gfx/interface/goals/MAR_Voina_10.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_11"
+		texturefile = "gfx/interface/goals/MAR_Voina_11.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_12"
+		texturefile = "gfx/interface/goals/MAR_Voina_12.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_13"
+		texturefile = "gfx/interface/goals/MAR_Voina_13.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_14"
+		texturefile = "gfx/interface/goals/MAR_Voina_14.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_15"
+		texturefile = "gfx/interface/goals/MAR_Voina_15.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_16"
+		texturefile = "gfx/interface/goals/MAR_Voina_16.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_17"
+		texturefile = "gfx/interface/goals/MAR_Voina_17.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Voina_18"
+		texturefile = "gfx/interface/goals/MAR_Voina_18.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Voina_19"
+		texturefile = "gfx/interface/goals/MAR_Voina_19.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Voina_20"
+		texturefile = "gfx/interface/goals/MAR_Voina_20.dds"
+	}		
+	SpriteType = {
+		name = "GFX_MAR_pohod_the_end"
+		texturefile = "gfx/interface/goals/MAR_pohod_the_end.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_pereezd"
+		texturefile = "gfx/interface/goals/MAR_pereezd.dds"
+	}			
+	SpriteType = {
+		name = "GFX_MAR_izbirateli"
+		texturefile = "gfx/interface/goals/MAR_izbirateli.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_kandidati"
+		texturefile = "gfx/interface/goals/MAR_kandidati.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Char_and_Regent"
+		texturefile = "gfx/interface/goals/MAR_Char_and_Regent.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_char_general"
+		texturefile = "gfx/interface/goals/MAR_char_general.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Char_ot_naroda"
+		texturefile = "gfx/interface/goals/MAR_Char_ot_naroda.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_help_bednim"
+		texturefile = "gfx/interface/goals/MAR_help_bednim.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_vstrecha_s_daunami"
+		texturefile = "gfx/interface/goals/MAR_vstrecha_s_daunami.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MAR_Our_party"
+		texturefile = "gfx/interface/goals/MAR_Our_party.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_An_offer"
+		texturefile = "gfx/interface/goals/MAR_an_offer.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_as_Tsar"
+		texturefile = "gfx/interface/goals/MAR_as_Tsar.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Border_1"
+		texturefile = "gfx/interface/goals/MAR_Border_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_northern"
+		texturefile = "gfx/interface/goals/MAR_northern.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Technologies_of_the_future"
+		texturefile = "gfx/interface/goals/MAR_Technologies_of_the_future.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Our_Ancestors"
+		texturefile = "gfx/interface/goals/MAR_Our_Ancestors.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Past_Connections"
+		texturefile = "gfx/interface/goals/MAR_Past_Connections.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Tsarist_Army"
+		texturefile = "gfx/interface/goals/MAR_Tsarist_Army.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Autonomous_Faith"
+		texturefile = "gfx/interface/goals/MAR_Autonomous_Faith.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_letter_of_will"
+		texturefile = "gfx/interface/goals/MAR_letter_of_will.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_new_managers"
+		texturefile = "gfx/interface/goals/MAR_new_managers.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Retake_of_Kazan"
+		texturefile = "gfx/interface/goals/MAR_Retake_of_Kazan.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Allign_burocrats"
+		texturefile = "gfx/interface/goals/MAR_Allign_burocrats.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Cool_Offer_Bob"
+		texturefile = "gfx/interface/goals/MAR_Cool_Offer_Bob.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Democratic_prism"
+		texturefile = "gfx/interface/goals/MAR_Democratic_prism.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Radical_Republic"
+		texturefile = "gfx/interface/goals/MAR_Radical_Republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_saving_forgotten"
+		texturefile = "gfx/interface/goals/MAR_saving_forgotten.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_German_Lapdog"
+		texturefile = "gfx/interface/goals/MAR_German_Lapdog.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Judge_Traitors"
+		texturefile = "gfx/interface/goals/MAR_Judge_Traitors.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_save_the_south"
+		texturefile = "gfx/interface/goals/MAR_save_the_south.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Strategic_base"
+		texturefile = "gfx/interface/goals/MAR_Strategic_base.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Tank_miracle"
+		texturefile = "gfx/interface/goals/MAR_Tank_miracle.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAR_Tankist_Brigade"
+		texturefile = "gfx/interface/goals/MAR_Tankist_Brigade.dds"
+	}
+}

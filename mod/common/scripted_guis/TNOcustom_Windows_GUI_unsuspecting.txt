@@ -4,7 +4,7 @@ scripted_gui = {
 		window_name = "TNO_Berezniki_Spy_Mehanic"
 		visible = {
 			is_ai = no
-			tag = MAR
+			#tag = MAR
 			has_country_flag = MAR_mehanica_opener_activation
 			has_country_flag = Berezniki_globalis_open_door
 		}

@@ -20,6 +20,8 @@ add_namespace = berez_kazembek
 
 add_namespace = berez_world_news
 
+add_namespace = berez_exper
+
 country_event = { #StranaStart
 	id = berez_eco.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.1"}
@@ -81,6 +83,7 @@ country_event = { #Prozvetanie
 	desc = berez_eco.4.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Opora_strani
 	option = {
 		name = berez_eco.4.a
 		ai_chance = { factor = 1 }	
@@ -100,6 +103,7 @@ country_event = { #Krov
 	picture = GFX_report_event_DlyaKroviEvent
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Net_consessiam
 	
 	option = {
 		name = berez_eco.5.a
@@ -135,6 +139,7 @@ country_event = {#NikakihKoncesiEpta
 	desc = berez_eco.7.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Net_consessiam
 	
 	option = {
 		name = berez_eco.7.a
@@ -195,6 +200,7 @@ country_event = {#FuturePravo
 	desc = berez_eco.10.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Nashe_budywee
 	
 	option = {
 		name = berez_eco.10.a
@@ -229,6 +235,7 @@ country_event = {#PostEffectumOtPotium
 	desc = berez_eco.12.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_report_event_PomogaemNePomogaemim
 	
 	option = {
 		name = berez_eco.12.a
@@ -251,6 +258,7 @@ country_event = {#KroviumPostEffectum
 	desc = berez_eco.13.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_report_event_PomogaemNePomogaemim
 	
 	option = {
 		name = berez_eco.13.a
@@ -273,6 +281,7 @@ country_event = {
 	desc = berez_eco.14.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_Event_Me_and_proletariat
 	
 	option = {
 		name = berez_eco.14.a
@@ -323,6 +332,7 @@ country_event = {#NachaloPolitVetki
 	desc = berez_eco.17.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Dve_storoni_medali
 	
 	option = {
 		name = berez_eco.17.a
@@ -337,6 +347,7 @@ country_event = {#BelOzero
 	desc = berez_eco.18.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Belozerskiy
 	
 	option = {
 		name = berez_eco.18.a
@@ -351,6 +362,7 @@ country_event = {#MariaUBeloozera
 	desc = berez_eco.19.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Za_kami
 	
 	option = {
 		name = berez_eco.19.a
@@ -371,11 +383,9 @@ country_event = {#WeirdoNovost
 		name = berez_eco.20.a
 		ai_chance = { factor = 1 }	
 		add_political_power = -20
-		add_ideas = {
-			MAR_regent_without_tsar_2
-		}
-		remove_ideas = {
-			MAR_regent_without_tsar_1
+		swap_ideas = {
+			remove_idea = MAR_regent_without_tsar_1
+			add_idea = MAR_regent_without_tsar_2
 		}
 	}
 }
@@ -423,16 +433,15 @@ country_event = {#WeirdoRazgovor
 	desc = berez_eco.23.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Razgovor
 	
 	option = {
 		name = berez_eco.23.a
 		ai_chance = { factor = 1 }
-		add_ideas = {
-			MAR_regent_without_tsar_3
+		swap_ideas = {
+			add_idea = MAR_regent_without_tsar_3
+			remove_idea = MAR_regent_without_tsar_2
 		}
-		remove_ideas = {
-			MAR_regent_without_tsar_2
-		}		
         hidden_effect = {
 			add_political_power = -24
 		}
@@ -461,6 +470,7 @@ country_event = {#NachetBarbarossiEpta
 	desc = berez_eco.25.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Strategia_nashi
 	
 	option = {
 		name = berez_eco.25.a
@@ -515,6 +525,7 @@ country_event = {#KrasnieVeterans
 	desc = berez_eco.28.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_veterans_of_the_west
 	
 	option = {
 		name = berez_eco.28.a
@@ -523,7 +534,7 @@ country_event = {#KrasnieVeterans
 	}
 }
 
-country_event = {#VelkomIntoNiggersUSAZone
+country_event = {#For Some reason there was shitty n-word joke. Literally RU-TNO
 	id = berez_eco.29
 	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_eco.29"}
 	title = berez_eco.29.t
@@ -574,6 +585,7 @@ country_event = {#SpasiboZaPomosh
 	desc = berez_eco.31.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Gum_pomosh
 	
 	option = {
 		name = berez_eco.31.a
@@ -612,15 +624,14 @@ country_event = {#BozheHraniNovuyuArmiu
 	desc = berez_eco.33.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_berezniki_arms
 	
 	option = {
 		name = berez_eco.33.a
-		ai_chance = { factor = 1 }	
-		add_ideas = {
-			MAR_renewed_army
-		}
-		remove_ideas = {
-			MAR_oldfashion_army
+		ai_chance = { factor = 1 }
+		swap_ideas = {
+			add_idea = MAR_renewed_army
+			remove_idea = MAR_oldfashion_army
 		}
 	}
 }
@@ -632,6 +643,7 @@ country_event = {#PravoNaFuture
 	desc = berez_eco.34.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Nashe_budywee
 	
 	option = {
 		name = berez_eco.34.a
@@ -646,6 +658,7 @@ country_event = {#NoMoreNemezkiBomb
 	desc = berez_eco.35.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Spusta_poltora_goda
 	
 	option = {
 		name = berez_eco.35.a
@@ -707,6 +720,7 @@ country_event = { #NikakihZavodovVPodvalah!
 	desc = berez_bomb.2.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Vynesti_zavodi
 	
 	option = {
 		ai_chance = { factor = 1 }	
@@ -747,6 +761,7 @@ country_event = { #ZaBereznikiUsrus
 	desc = berez_bomb.4.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_straba_dly_bereznikov
 	
 	option = {
 		name = berez_bomb.4.a
@@ -765,6 +780,7 @@ country_event = { #StabilnostPartiiIDoma
 	desc = berez_bomb.5.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Stabil_apparat
 	
 	option = {
 		name = berez_bomb.5.a
@@ -872,11 +888,13 @@ country_event = { #ZaRodinu
 	desc = berez_bomb.10.d
 	is_triggered_only = yes
 	fire_only_once = yes
+	picture = GFX_event_Za_Rodiny
 	
 	option = {
 		name = berez_bomb.10.a
 		ai_chance = { factor = 1 }	
-		war_support_factor	= 0.10
+		#war_support_factor	= 0.10
+		add_war_support = 0.1
 	}
 }
 
@@ -970,23 +988,6 @@ country_event = { #GuiStart
 			var = MAR_berezniki_pizdec
 			value = 1
 		}
-	}
-}
-
-#######################################
-country_event = { #Berezniki splits and takes the oil!
-	id = KIR.30
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KIR.30"}
-	title = KIR.30.t
-	desc = KIR.30.desc
-	picture = GFX_report_event_secret_squirrel_stuff
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = { #
-		name = KIR.30.a
-		ai_chance = { factor = 1 }
 	}
 }
 #######################################
@@ -1926,7 +1927,7 @@ country_event = { # MAR_Mladorosskay_mechta
 		name = berez_voina.40.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.05
-		load_focus_tree = MAR_Belozerski_tree
+		#load_focus_tree = MAR_Belozerski_tree
 	}
 }
 
@@ -1968,7 +1969,7 @@ country_event = { # MAR_pohod_the_end
 	title = berez_zemsob.1.t
 	desc = berez_zemsob.1.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_1
+	picture = GFX_event_Zemsobor_1
 	is_triggered_only = yes
 
 	option = {
@@ -1984,7 +1985,7 @@ country_event = { # MAR_pereezd
 	title = berez_zemsob.2.t
 	desc = berez_zemsob.2.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_2
+	picture = GFX_event_Zemsobor_2
 	is_triggered_only = yes
 
 	option = {
@@ -2005,7 +2006,7 @@ country_event = { # MAR_izbirateli
 	title = berez_zemsob.3.t
 	desc = berez_zemsob.3.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_3
+	picture = GFX_event_Zemsobor_3
 	is_triggered_only = yes
 
 	option = {
@@ -2021,7 +2022,7 @@ country_event = { # MAR_kandidati BELOZERSKI
 	title = berez_zemsob.4.t
 	desc = berez_zemsob.4.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_4
+	picture = GFX_event_Zemsobor_4
 	trigger = {
 		tag = MAR
 		NOT = { has_completed_focus = MAR_kandidati }
@@ -2076,7 +2077,7 @@ country_event = { # MAR_kandidati KAKAYA TO HUETA
 	option = {
 		name = berez_zemsob.6.a
 		ai_chance = { factor = 1 }
-				hidden_effect = {
+		hidden_effect = {
 			country_event = {
 				id = berez_zemsob.7 days = 5
 			}
@@ -2121,7 +2122,7 @@ country_event = { # MAR_Char_and_Regent
 	title = berez_zemsob.9.t
 	desc = berez_zemsob.9.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_9
+	picture = GFX_event_Zemsobor_9
 	is_triggered_only = yes
 
 	option = {
@@ -2137,7 +2138,7 @@ country_event = { # MAR_help_bednim
 	title = berez_zemsob.10.t
 	desc = berez_zemsob.10.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_10
+	picture = GFX_event_Zemsobor_10
 	is_triggered_only = yes
 
 	option = {
@@ -2154,7 +2155,7 @@ country_event = { # MAR_vstrecha_s_daunami
 	title = berez_zemsob.11.t
 	desc = berez_zemsob.11.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_11
+	picture = GFX_event_Zemsobor_11
 	is_triggered_only = yes
 
 	option = {
@@ -2177,7 +2178,7 @@ country_event = { # MAR_Our_party
 	title = berez_zemsob.12.t
 	desc = berez_zemsob.12.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_12
+	picture = GFX_event_Zemsobor_12
 	is_triggered_only = yes
 
 	option = {
@@ -2193,7 +2194,7 @@ country_event = { # MAR_char_general
 	title = berez_zemsob.13.t
 	desc = berez_zemsob.13.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_13
+	picture = GFX_event_Zemsobor_13
 	is_triggered_only = yes
 
 	option = {
@@ -2209,7 +2210,7 @@ country_event = { # MAR_blagoslov_predkov
 	title = berez_zemsob.14.t
 	desc = berez_zemsob.14.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_14
+	picture = GFX_event_Zemsobor_14
 	is_triggered_only = yes
 
 	option = {
@@ -2226,7 +2227,7 @@ country_event = { # MAR_Svayzi_proshlogo
 	title = berez_zemsob.15.t
 	desc = berez_zemsob.15.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_15
+	picture = GFX_event_Zemsobor_15
 	is_triggered_only = yes
 
 	option = {
@@ -2241,7 +2242,7 @@ country_event = { # MAR_Char_army
 	title = berez_zemsob.16.t
 	desc = berez_zemsob.16.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_16
+	picture = GFX_event_Zemsobor_16
 	is_triggered_only = yes
 
 	option = {
@@ -2261,7 +2262,7 @@ country_event = { # MAR_Char_ot_naroda
 	title = berez_zemsob.17.t
 	desc = berez_zemsob.17.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_17
+	picture = GFX_event_Zemsobor_17
 	is_triggered_only = yes
 
 	option = {
@@ -2277,7 +2278,7 @@ country_event = { # MAR_opati_sladkoe_predlojenie
 	title = berez_zemsob.18.t
 	desc = berez_zemsob.18.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_18
+	picture = GFX_event_Zemsobor_18
 	is_triggered_only = yes
 
 	option = {
@@ -2293,7 +2294,7 @@ country_event = { # MAR_everyman_char
 	title = berez_zemsob.19.t
 	desc = berez_zemsob.19.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_19
+	picture = GFX_event_Zemsobor_19
 	is_triggered_only = yes
 
 	option = {
@@ -2308,7 +2309,7 @@ country_event = { # MAR_technocraty
 	title = berez_zemsob.20.t
 	desc = berez_zemsob.20.d
 	fire_only_once = yes
-	picture = GFX_report_event_zemsob_20
+	picture = GFX_event_Zemsobor_20
 	is_triggered_only = yes
 
 	option = {
@@ -2529,8 +2530,92 @@ news_event = { # Obiedinenie jopi Leha lepoha
 	}
 }
 
+news_event = { # SER_BEL_TOP
+	id = berez_world_news.4
+	title = berez_world_news.4.t
+	desc = berez_world_news.4.d
+	picture = GFX_berez_world_news_004
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = berez_world_news.4.a
+		trigger = {
+		tag = MAR
+		}
+		if = {
+            limit = {
+                is_ai = no
+            }
+            set_country_flag = big_event_russian_unification_MAR_ser_bel
+        }
+		
+	}
+	
+	
+	option = {
+		name = berez_world_news.4.b
+		trigger = {
+		NOT = {
+		tag = MAR
+		}
+		}
+		if = {
+            limit = {
+                is_ai = no
+            }
+            set_country_flag = big_event_russian_unification_MAR_ser_bel
+        }
+		
+}
+}
+
+#####################################################################################
+################################### Funny Experiments ###############################
+#####################################################################################
 
 
+country_event = {  
+	id = berez_exper.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_exper.1"}
+	title = berez_exper.1.t
+	desc = berez_exper.1.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.1
+
+	option = {
+		name = berez_exper.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {  
+	id = berez_exper.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.1"}
+	title = berez_exper.2.t
+	desc =berez_exper.2.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.1
+
+	option = {
+		name = berez_exper.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { 
+	id = berez_exper.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.1"}
+	title = berez_exper.3.t
+	desc = berez_exper.3.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.1
+
+	option = {
+		name = berez_exper.3.a
+		ai_chance = { factor = 1 }
+	}
+}
 #####################################################################################
 ################################### SERGO BELII #####################################
 #####################################################################################
@@ -3017,7 +3102,7 @@ country_event = { # MAR_omsk_problem
 
 	option = {
 		name = berez_belozerski.34.a
-		ai_chance = { factor = 1 }		
+		ai_chance = { factor = 1 }	
 	}	
 }
 
@@ -3073,6 +3158,19 @@ country_event = { # MAR_edinaa_rus
 
 	option = {
 		name = berez_belozerski.38.a
+		ai_chance = { factor = 1 }		
+	}	
+}
+country_event = { # MAR_omsk_dead
+	id = berez_belozerski.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event berez_belozerski.39"}
+	title = berez_belozerski.39.t
+	desc = berez_belozerski.39.d
+	fire_only_once = yes
+	picture = GFX_report_event_belozerski.39
+
+	option = {
+		name = berez_belozerski.39.a
 		ai_chance = { factor = 1 }		
 	}	
 }

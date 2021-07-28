@@ -249,6 +249,53 @@ RUS_reunification_category = {
 				}
 			}
 			if = {
+				limit {
+					original_tag = MAR
+					}
+					if = {
+						limit = {
+							has_government = despotism
+						}
+						set_cosmetic_tag = MAR_ser_bel_RUS
+						hidden_effect = {
+							every_country  = {
+									news_event = {
+										id = berez_world_news.4
+									}
+								}
+							}
+						}
+					if = {
+						limit = {
+							has_government = authoritarian_democrat
+						}
+						set_cosmetic_tag = MAR_Maria_I_RUS
+						hidden_effect = {
+						every_country  = {
+								news_event = {
+									id = berez_world_news.5
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = communist
+								has_government = socialist
+							}
+						}
+						set_cosmetic_tag = MAR_Kosygin_RUS
+						hidden_effect = {
+						every_country  = {
+								news_event = {
+									id = berez_world_news.6
+								}
+							}
+						}
+					}
+				}
+			if = {
 				limit = {
 					original_tag = NIK
 				}
@@ -1180,20 +1227,34 @@ RUS_reunification_category = {
 				}
 			}
 			if = {
+				limit = {
+					original_tag = MAR
+				}
+				if = {
 					limit = {
-						MAR = {
-							has_government = despotism
-							
-							
-						}
+						has_government = despotism
 					}
 					hidden_effect = {
-					load_focus_tree = MAR_Super_reg
+						load_focus_tree = MAR_Super_reg
 					}
 					set_cosmetic_tag = MAR_ser_bel_superreg
-				
 				}				
-			
+				if = {
+					limit = {
+						has_government = authoritarian_democrat
+					}
+					set_cosmetic_tag = MAR_Maria_I_superreg
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = socialist
+							has_government = authoritarian_democrat
+						}
+					}
+					set_cosmetic_tag = MAR_Kosygin_superreg
+				}
+			}
 			if = {
 				limit = {
 					original_tag = KIR
@@ -2040,6 +2101,10 @@ RUS_reunification_category = {
 				}
 			}
 			if = {
+				limit = {
+					original_tag = MAR
+				}
+				if = {
 					limit = {
 						MAR = {
 							has_government = despotism
@@ -2067,7 +2132,7 @@ RUS_reunification_category = {
 							id = berez_world_news.2
 						}
 					}
-					set_cosmetic_tag = MAR_mar_rom
+					set_cosmetic_tag = MAR_Maria_I_reg
 				}
 				if = {
 					limit = {
@@ -2081,9 +2146,9 @@ RUS_reunification_category = {
 							id = berez_world_news.3
 						}
 					}
-					set_cosmetic_tag = MAR_ale_kos
+					set_cosmetic_tag = MAR_Kosygin_reg
 				}				
-			
+			}
 			if = {
 				limit = {
 					original_tag = NIK

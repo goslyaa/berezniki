@@ -1,0 +1,384 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_event_Zemsobor_20"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_20.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_19"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_19.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_18"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_18.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_17"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_17.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_16"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_16.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_15"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_15.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_14"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_14.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_13"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_13.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_12"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_12.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_11"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_11.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_10"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_10.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_9"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_9.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_4"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_4.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_3"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_3.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_2"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_2.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Zemsobor_1"
+		texturefile = "gfx/event_pictures/GFX_event_Zemsobor_1.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Za_Rodiny"
+		texturefile = "gfx/event_pictures/GFX_event_Za_Rodiny.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Vynesti_zavodi"
+		texturefile = "gfx/event_pictures/GFX_event_Vynesti_zavodi.dds"
+	}
+	spriteType = {
+		name = "GFX_event_straba_dly_bereznikov"
+		texturefile = "gfx/event_pictures/GFX_event_straba_dly_bereznikov.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Stabil_apparat"
+		texturefile = "gfx/event_pictures/GFX_event_Stabil_apparat.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Strategia_nashi"
+		texturefile = "gfx/event_pictures/GFX_event_Strategia_nashi.dds"
+	}
+	spriteType = {
+		name = "GFX_Event_Me_and_proletariat"
+		texturefile = "gfx/event_pictures/GFX_Event_Me_and_proletariat.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Net_consessiam"
+		texturefile = "gfx/event_pictures/GFX_event_Net_consessiam.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Opora_strani"
+		texturefile = "gfx/event_pictures/GFX_event_Opora_strani.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Spusta_poltora_goda"
+		texturefile = "gfx/event_pictures/GFX_event_Spusta_poltora_goda.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Razgovor"
+		texturefile = "gfx/event_pictures/GFX_event_Razgovor.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Nashe_budywee"
+		texturefile = "gfx/event_pictures/GFX_event_Nashe_budywee.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Gum_pomosh"
+		texturefile = "gfx/event_pictures/GFX_event_Gum_pomosh.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Econom_chudo"
+		texturefile = "gfx/event_pictures/GFX_event_Econom_chudo.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Za_kami"
+		texturefile = "gfx/event_pictures/GFX_event_Za_kami.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Dve_storoni_medali"
+		texturefile = "gfx/event_pictures/GFX_event_Dve_storoni_medali.dds"
+	}
+	spriteType = {
+		name = "GFX_event_veterans_of_the_west"
+		texturefile = "gfx/event_pictures/GFX_event_Vetarini_zapadno_voini.dds"
+	}
+	spriteType = {
+		name = "GFX_event_berezniki_arms"
+		texturefile = "gfx/event_pictures/GFX_event_Armia.dds"
+	}
+	spriteType = {
+		name = "GFX_event_Belozerskiy"
+		texturefile = "gfx/event_pictures/GFX_event_Belozero.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Mass_Trenning"
+		texturefile = "gfx/event_pictures/GFX_mass_trenning.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Zhrebi_broshen"
+		texturefile = "gfx/event_pictures/GFX_zhrebi_broshen.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Rabotagi"
+		texturefile = "gfx/event_pictures/GFX_report_event_Rabotagi.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Peshki"
+		texturefile = "gfx/event_pictures/GFX_report_event_Peshki.dds"
+	}	
+	spriteType = {
+		name = "GFX_report_event_NovieLica"
+		texturefile = "gfx/event_pictures/GFX_report_event_NovieLica.dds"
+	}	
+	spriteType = {
+		name = "GFX_report_event_Verh_dnom"
+		texturefile = "gfx/event_pictures/GFX_Verh_dnom.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Boina"
+		texturefile = "gfx/event_pictures/GFX_Boina.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Obval"
+		texturefile = "gfx/event_pictures/GFX_Obval.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Obval2"
+		texturefile = "gfx/event_pictures/GFX_Obval_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Orel"
+		texturefile = "gfx/event_pictures/GFX_Orel_1.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Orel2"
+		texturefile = "gfx/event_pictures/GFX_Orel_2.dds"
+	}	
+	spriteType = {
+		name = "GFX_report_event_Den_Soldat"
+		texturefile = "gfx/event_pictures/GFX_den_soldata.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Dom"
+		texturefile = "gfx/event_pictures/GFX_Dom.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_1"
+		texturefile = "gfx/event_pictures/GFX_event_voina_1.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_2"
+		texturefile = "gfx/event_pictures/GFX_event_voina_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_3"
+		texturefile = "gfx/event_pictures/GFX_event_voina_3.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_4"
+		texturefile = "gfx/event_pictures/GFX_event_voina_4.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_5"
+		texturefile = "gfx/event_pictures/GFX_event_voina_5.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_6"
+		texturefile = "gfx/event_pictures/GFX_event_voina_6.dds"
+	}														
+	spriteType = {
+		name = "GFX_report_event_Voina_7"
+		texturefile = "gfx/event_pictures/GFX_event_voina_7.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_12"
+		texturefile = "gfx/event_pictures/GFX_event_voina_12.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_13"
+		texturefile = "gfx/event_pictures/GFX_event_voina_13.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_14"
+		texturefile = "gfx/event_pictures/GFX_event_voina_14.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_15"
+		texturefile = "gfx/event_pictures/GFX_event_voina_15.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_16"
+		texturefile = "gfx/event_pictures/GFX_event_voina_16.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_17"
+		texturefile = "gfx/event_pictures/GFX_event_voina_17.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_18"
+		texturefile = "gfx/event_pictures/GFX_event_voina_18.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_21"
+		texturefile = "gfx/event_pictures/GFX_event_voina_21.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_22"
+		texturefile = "gfx/event_pictures/GFX_event_voina_22.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_26"
+		texturefile = "gfx/event_pictures/GFX_event_voina_26.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_27"
+		texturefile = "gfx/event_pictures/GFX_event_voina_27.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_35"
+		texturefile = "gfx/event_pictures/GFX_event_voina_35.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_38"
+		texturefile = "gfx/event_pictures/GFX_event_voina_38.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Voina_39"
+		texturefile = "gfx/event_pictures/GFX_event_voina_39.dds"
+	}									
+	spriteType = {
+		name = "GFX_berez_world_news_001"
+		texturefile = "gfx/event_pictures/GFX_news_event_BER_Belozersky_Reunification.dds"
+	}
+	spriteType = {
+		name = "GFX_berez_world_news_002"
+		texturefile = "gfx/event_pictures/GFX_news_event_BER_Maria_Reunification.dds"
+	}
+	spriteType = {
+		name = "GFX_berez_world_news_003"
+		texturefile = "gfx/event_pictures/GFX_news_event_BER_Kosygin_Reunification.dds"
+	}
+	spriteType = {
+		name = "GFX_berez_world_news_004"
+		texturefile = "gfx/event_pictures/GFX_news_event_BER_Russian_Belozersky_Reunification.dds"
+	}		
+	spriteType = {
+		name = "GFX_report_event_RusskieVperedNaMoskvu"
+		texturefile = "gfx/event_pictures/GFX_report_event_RussianSpeznat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DaEtoZhePepelyaev"
+		texturefile = "gfx/event_pictures/GFX_report_event_CockzakiAss.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_PomogaemNePomogaemim"
+		texturefile = "gfx/event_pictures/GFX_report_event_EdaDlyaRabochih.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_VelcomeUsaNiggerZone"
+		texturefile = "gfx/event_pictures/GFX_report_event_PosilkaVam.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_SlavaUralTantkam"
+		texturefile = "gfx/event_pictures/GFX_report_event_NovoEqupement.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_KosyginTiKtoNahui"
+		texturefile = "gfx/event_pictures/GFX_report_event_WerdoNovost.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DlyaPervoyVoenki"
+		texturefile = "gfx/event_pictures/GFX_report_event_PlaniNaBudushee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_PervoyeFutureFocus"
+		texturefile = "gfx/event_pictures/GFX_report_event_BerezFuture.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DlyaPotaEvent"
+		texturefile = "gfx/event_pictures/GFX_report_event_AndPotom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DlyaKroviEvent"
+		texturefile = "gfx/event_pictures/GFX_report_event_KroviuAnd.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DlyaDzentelmani"
+		texturefile = "gfx/event_pictures/GFX_report_event_GentelmanUdachi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_GlazaNaUg"
+		texturefile = "gfx/event_pictures/GFX_report_event_GlazaNaAB.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_NashiNachinania"
+		texturefile = "gfx/event_pictures/GFX_report_event_KazemNachinaet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_CiaDruzya"
+		texturefile = "gfx/event_pictures/GFX_report_event_PindosiDryzbya.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_SpasiboVyat"
+		texturefile = "gfx/event_pictures/GFX_report_event_PosilkaFromVyat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ArowWithMan"
+		texturefile = "gfx/event_pictures/GFX_report_event_rowtihman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_RabFacrottii"
+		texturefile = "gfx/event_pictures/GFX_report_event_slavefac.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ZleshkaZaVyat"
+		texturefile = "gfx/event_pictures/GFX_report_event_SlezhaVoBlag.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_TsarPolitruki"
+		texturefile = "gfx/event_pictures/GFX_report_event_TsaristRuki.dds"
+	}
+}

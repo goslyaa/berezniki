@@ -11,7 +11,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				MAR_berezniki_pizdec = > 74
+				MAR_berezniki_pizdec > 74
 			}
 		}
 		localization_key = MAR_all_very_horoshi
@@ -19,8 +19,8 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				MAR_berezniki_pizdec = > 50
-				MAR_berezniki_pizdec = < 74
+				MAR_berezniki_pizdec > 50
+				MAR_berezniki_pizdec < 74
 			}
 		}
 		localization_key = MAR_all_horosho
@@ -36,8 +36,8 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				MAR_berezniki_pizdec = < 50
-				MAR_berezniki_pizdec = > 25
+				MAR_berezniki_pizdec < 50
+				MAR_berezniki_pizdec > 25
 			}
 		}
 		localization_key = MAR_all_bad
@@ -45,7 +45,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				MAR_berezniki_pizdec = < 25
+				MAR_berezniki_pizdec < 25
 			}
 		}
 		localization_key = MAR_all_very_bad

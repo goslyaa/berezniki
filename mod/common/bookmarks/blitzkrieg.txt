@@ -50,18 +50,32 @@ bookmarks = {
 				}
 			}
 
-			"ZZZ" = { history = "" }
 			"MAR" = {
 						history = "MAR_THENEWORDER_DESC"
 						ideology = despotism
 						ideas = {
 							MAR_regent_without_tsar_1
 							MAR_forced_syncretisism
+							MAR_oldfashion_army
 						}
 						focuses = {
-							MAR_kill_zaraza
-							MAR_bombing_vinesti_zavodi
-							MAR_spokoistvie_uga
+							MAR_Char_and_Regent
+							MAR_char_general
+							MAR_Char_ot_naroda
+						}
+					}
+			"MAR" = {
+						history = "MAR_THENEWORDER_DESC"
+						ideology = despotism
+						ideas = {
+							MAR_regent_without_tsar_1
+							MAR_forced_syncretisism
+							MAR_oldfashion_army
+						}
+						focuses = {
+							MAR_Char_and_Regent
+							MAR_char_general
+							MAR_Char_ot_naroda
 						}
 					}
 			
